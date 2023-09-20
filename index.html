@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Self-Custody</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="custody pre-login">
+        <div class="step1"  onclick="step1Switch()">
+            <div class="start">
+                <div class="s1">
+                    <h1>Zest wallet</h1>
+                    <p>Your gateway to the Web3 universe.</p>
+                </div>
+                <div class="s2">
+                    <p>Keep it safe</p>
+                    <h2>Security to your standards</h2>
+                    <button class="secondary" onclick="moveTop()">Get started</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="step step2">
+    
+            <a href="javascript:void(0)" class="delete"></a>
+    
+            <svg width="65" height="62" viewBox="0 0 65 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_10289_482)">
+                <path d="M36.3619 17.4372L39.712 16.0533L46.4121 13.2855L59.8125 7.75L26.5625 38.625L6.40109 33.0224C5.72301 32.8287 5.24087 32.2284 5.19814 31.5245C5.15542 30.8206 5.56141 30.1663 6.21109 29.8921L9.56118 28.5082L11.2362 27.8163" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M59.8125 7.75L50.6687 51.1792C50.5205 51.8697 50.0408 52.4423 49.3871 52.7093C48.7334 52.9763 47.99 52.9032 47.4008 52.514L26.5625 38.625L59.8125 7.75Z" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.5625 38.625V54.015C26.5636 54.5712 26.937 55.0577 27.4739 55.2026C28.0109 55.3475 28.5783 55.1149 28.8591 54.6349L34.9415 44.2086" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <g filter="url(#filter1_f_10289_482)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7501 22.248C24.6831 22.248 26.2501 20.681 26.2501 18.7479C26.2501 16.8149 24.6831 15.2479 22.7501 15.2479C20.8171 15.2479 19.2501 16.8149 19.2501 18.7479C19.2501 20.681 20.8171 22.248 22.7501 22.248Z" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25.0023 27.2058C21.3814 28.1703 17.5483 26.7222 15.4697 23.6044C13.3911 20.4866 13.5284 16.3913 15.8113 13.4198C18.0942 10.4483 22.0158 9.26031 25.5639 10.4653C29.112 11.6703 31.499 15.0008 31.5001 18.748V19.623C31.5001 21.0728 30.3249 22.248 28.8751 22.248C27.4254 22.248 26.2501 21.0728 26.2501 19.623" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <path d="M36.3619 17.4372L39.712 16.0533L46.4121 13.2855L59.8125 7.75L26.5625 38.625L6.40109 33.0224C5.72301 32.8287 5.24087 32.2284 5.19814 31.5245C5.15542 30.8206 5.56141 30.1663 6.21109 29.8921L9.56118 28.5082L11.2362 27.8163" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M59.8125 7.75L50.6687 51.1792C50.5205 51.8697 50.0408 52.4423 49.3871 52.7093C48.7334 52.9763 47.99 52.9032 47.4008 52.514L26.5625 38.625L59.8125 7.75Z" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.5625 38.625V54.015C26.5636 54.5712 26.937 55.0577 27.4739 55.2026C28.0109 55.3475 28.5783 55.1149 28.8591 54.6349L34.9415 44.2086" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7501 22.248C24.6831 22.248 26.2501 20.681 26.2501 18.7479C26.2501 16.8149 24.6831 15.2479 22.7501 15.2479C20.8171 15.2479 19.2501 16.8149 19.2501 18.7479C19.2501 20.681 20.8171 22.248 22.7501 22.248Z" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25.0023 27.2058C21.3814 28.1703 17.5483 26.7222 15.4697 23.6044C13.3911 20.4866 13.5284 16.3913 15.8113 13.4198C18.0942 10.4483 22.0158 9.26031 25.5639 10.4653C29.112 11.6703 31.499 15.0008 31.5001 18.748V19.623C31.5001 21.0728 30.3249 22.248 28.8751 22.248C27.4254 22.248 26.2501 21.0728 26.2501 19.623" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <filter id="filter0_f_10289_482" x="0" y="-1" width="65" height="65" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10289_482"/>
+                </filter>
+                <filter id="filter1_f_10289_482" x="9" y="4.99994" width="27.5001" height="27.5014" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10289_482"/>
+                </filter>
+                </defs>
+            </svg>
+    
+            <h3>Enter an email address</h3>
+            <p>You’ll use it to create a new account or recover an existing one.</p>
+    
+            <div class="input-container">
+                <label for="email">Email address</label>
+                <input type="email" name="" id="email" placeholder="email@me.com">
+            </div>
+    
+            <span class="separator">or</span>
+    
+            <button class="secondary" id="fidelity_login">Sign in with Fidelity</button>
+            <button class="secondary unselected" id="google_login">Sign in with Gmail</button>
+    
+            <div class="bottom-button-container">
+                <p>By continuing, you agree to our  <a href="javascript:void(0)" target="_blank">terms</a></p>
+                <button class="primary" id="toStep3">Continue</button>
+            </div>
+        </div>
+
+        <div class="step fidelity-email">
+    
+            <a href="javascript:void(0)" class="delete"></a>
+    
+            <svg width="65" height="62" viewBox="0 0 65 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_10289_482)">
+                <path d="M36.3619 17.4372L39.712 16.0533L46.4121 13.2855L59.8125 7.75L26.5625 38.625L6.40109 33.0224C5.72301 32.8287 5.24087 32.2284 5.19814 31.5245C5.15542 30.8206 5.56141 30.1663 6.21109 29.8921L9.56118 28.5082L11.2362 27.8163" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M59.8125 7.75L50.6687 51.1792C50.5205 51.8697 50.0408 52.4423 49.3871 52.7093C48.7334 52.9763 47.99 52.9032 47.4008 52.514L26.5625 38.625L59.8125 7.75Z" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.5625 38.625V54.015C26.5636 54.5712 26.937 55.0577 27.4739 55.2026C28.0109 55.3475 28.5783 55.1149 28.8591 54.6349L34.9415 44.2086" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <g filter="url(#filter1_f_10289_482)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7501 22.248C24.6831 22.248 26.2501 20.681 26.2501 18.7479C26.2501 16.8149 24.6831 15.2479 22.7501 15.2479C20.8171 15.2479 19.2501 16.8149 19.2501 18.7479C19.2501 20.681 20.8171 22.248 22.7501 22.248Z" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25.0023 27.2058C21.3814 28.1703 17.5483 26.7222 15.4697 23.6044C13.3911 20.4866 13.5284 16.3913 15.8113 13.4198C18.0942 10.4483 22.0158 9.26031 25.5639 10.4653C29.112 11.6703 31.499 15.0008 31.5001 18.748V19.623C31.5001 21.0728 30.3249 22.248 28.8751 22.248C27.4254 22.248 26.2501 21.0728 26.2501 19.623" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <path d="M36.3619 17.4372L39.712 16.0533L46.4121 13.2855L59.8125 7.75L26.5625 38.625L6.40109 33.0224C5.72301 32.8287 5.24087 32.2284 5.19814 31.5245C5.15542 30.8206 5.56141 30.1663 6.21109 29.8921L9.56118 28.5082L11.2362 27.8163" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M59.8125 7.75L50.6687 51.1792C50.5205 51.8697 50.0408 52.4423 49.3871 52.7093C48.7334 52.9763 47.99 52.9032 47.4008 52.514L26.5625 38.625L59.8125 7.75Z" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.5625 38.625V54.015C26.5636 54.5712 26.937 55.0577 27.4739 55.2026C28.0109 55.3475 28.5783 55.1149 28.8591 54.6349L34.9415 44.2086" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7501 22.248C24.6831 22.248 26.2501 20.681 26.2501 18.7479C26.2501 16.8149 24.6831 15.2479 22.7501 15.2479C20.8171 15.2479 19.2501 16.8149 19.2501 18.7479C19.2501 20.681 20.8171 22.248 22.7501 22.248Z" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25.0023 27.2058C21.3814 28.1703 17.5483 26.7222 15.4697 23.6044C13.3911 20.4866 13.5284 16.3913 15.8113 13.4198C18.0942 10.4483 22.0158 9.26031 25.5639 10.4653C29.112 11.6703 31.499 15.0008 31.5001 18.748V19.623C31.5001 21.0728 30.3249 22.248 28.8751 22.248C27.4254 22.248 26.2501 21.0728 26.2501 19.623" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <filter id="filter0_f_10289_482" x="0" y="-1" width="65" height="65" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10289_482"/>
+                </filter>
+                <filter id="filter1_f_10289_482" x="9" y="4.99994" width="27.5001" height="27.5014" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10289_482"/>
+                </filter>
+                </defs>
+            </svg>
+    
+            <h3>Enter your Fidelity account email</h3>
+            <p>You’ll use it to create a new account or recover an existing one.</p>
+    
+            <div class="input-container">
+                <label for="email">Email address</label>
+                <input type="email" name="" id="email" placeholder="email@me.com">
+            </div>
+
+            <div class="input-container">
+                <label for="fidelity_pwd">Password</label>
+                <input type="password" name="" id="fidelity_pwd" placeholder="">
+            </div>
+    
+            <div class="bottom-button-container">
+                <button class="primary" id="sign_fidelity">Sing in with Fidelity</button>
+            </div>
+        </div>
+
+        <div class="step google">
+    
+            <a href="javascript:void(0)" class="delete"></a>
+    
+            <svg width="65" height="62" viewBox="0 0 65 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_10289_482)">
+                <path d="M36.3619 17.4372L39.712 16.0533L46.4121 13.2855L59.8125 7.75L26.5625 38.625L6.40109 33.0224C5.72301 32.8287 5.24087 32.2284 5.19814 31.5245C5.15542 30.8206 5.56141 30.1663 6.21109 29.8921L9.56118 28.5082L11.2362 27.8163" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M59.8125 7.75L50.6687 51.1792C50.5205 51.8697 50.0408 52.4423 49.3871 52.7093C48.7334 52.9763 47.99 52.9032 47.4008 52.514L26.5625 38.625L59.8125 7.75Z" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.5625 38.625V54.015C26.5636 54.5712 26.937 55.0577 27.4739 55.2026C28.0109 55.3475 28.5783 55.1149 28.8591 54.6349L34.9415 44.2086" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <g filter="url(#filter1_f_10289_482)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7501 22.248C24.6831 22.248 26.2501 20.681 26.2501 18.7479C26.2501 16.8149 24.6831 15.2479 22.7501 15.2479C20.8171 15.2479 19.2501 16.8149 19.2501 18.7479C19.2501 20.681 20.8171 22.248 22.7501 22.248Z" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25.0023 27.2058C21.3814 28.1703 17.5483 26.7222 15.4697 23.6044C13.3911 20.4866 13.5284 16.3913 15.8113 13.4198C18.0942 10.4483 22.0158 9.26031 25.5639 10.4653C29.112 11.6703 31.499 15.0008 31.5001 18.748V19.623C31.5001 21.0728 30.3249 22.248 28.8751 22.248C27.4254 22.248 26.2501 21.0728 26.2501 19.623" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <path d="M36.3619 17.4372L39.712 16.0533L46.4121 13.2855L59.8125 7.75L26.5625 38.625L6.40109 33.0224C5.72301 32.8287 5.24087 32.2284 5.19814 31.5245C5.15542 30.8206 5.56141 30.1663 6.21109 29.8921L9.56118 28.5082L11.2362 27.8163" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M59.8125 7.75L50.6687 51.1792C50.5205 51.8697 50.0408 52.4423 49.3871 52.7093C48.7334 52.9763 47.99 52.9032 47.4008 52.514L26.5625 38.625L59.8125 7.75Z" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.5625 38.625V54.015C26.5636 54.5712 26.937 55.0577 27.4739 55.2026C28.0109 55.3475 28.5783 55.1149 28.8591 54.6349L34.9415 44.2086" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7501 22.248C24.6831 22.248 26.2501 20.681 26.2501 18.7479C26.2501 16.8149 24.6831 15.2479 22.7501 15.2479C20.8171 15.2479 19.2501 16.8149 19.2501 18.7479C19.2501 20.681 20.8171 22.248 22.7501 22.248Z" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25.0023 27.2058C21.3814 28.1703 17.5483 26.7222 15.4697 23.6044C13.3911 20.4866 13.5284 16.3913 15.8113 13.4198C18.0942 10.4483 22.0158 9.26031 25.5639 10.4653C29.112 11.6703 31.499 15.0008 31.5001 18.748V19.623C31.5001 21.0728 30.3249 22.248 28.8751 22.248C27.4254 22.248 26.2501 21.0728 26.2501 19.623" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <filter id="filter0_f_10289_482" x="0" y="-1" width="65" height="65" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10289_482"/>
+                </filter>
+                <filter id="filter1_f_10289_482" x="9" y="4.99994" width="27.5001" height="27.5014" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10289_482"/>
+                </filter>
+                </defs>
+            </svg>
+    
+            <h3>Google</h3>
+    
+            <div class="input-container">
+                <label for="email">Email address</label>
+                <input type="email" name="" id="email" placeholder="email@me.com">
+            </div>
+    
+            <div class="bottom-button-container">
+                <button class="primary" id="sing_goggle">Continue</button>
+            </div>
+        </div>
+
+        <div class="step step3">
+            <svg width="65" height="62" viewBox="0 0 65 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_10308_396)">
+                <path d="M49.6967 21.3333L54.28 16.75" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M49.6967 39.6667L54.28 44.25" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M50.8425 30.5003H59.8625" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.3217 21.3333L10.7384 16.75" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.3217 39.6667L10.7384 44.25" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.175 30.5003H5.15503" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M32.5082 7.00018V53.9995" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2827 42.8631C22.2829 43.1171 22.3776 43.3618 22.5484 43.5497L31.7439 53.6648C31.9375 53.8779 32.2121 53.9993 32.5 53.9993C32.7879 53.9993 33.0624 53.8779 33.256 53.6648L42.4516 43.5497C42.6224 43.3618 42.7171 43.1171 42.7172 42.8631V15.3787C42.7168 15.0685 42.5754 14.7753 42.333 14.5818L33.1375 7.22537C32.7646 6.9276 32.2353 6.9276 31.8624 7.22537L22.6669 14.5818C22.4245 14.7753 22.2832 15.0685 22.2827 15.3787V42.8631Z" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M42.6171 14.9209L32.5081 17.9534L22.3992 14.9209" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.3828 43.2862L32.5081 46.3227L42.6334 43.2862" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <path d="M49.6967 21.3333L54.28 16.75" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M49.6967 39.6667L54.28 44.25" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M50.8425 30.5003H59.8625" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.3217 21.3333L10.7384 16.75" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.3217 39.6667L10.7384 44.25" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.175 30.5003H5.15503" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M32.5082 7.00018V53.9995" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2827 42.8631C22.2829 43.1171 22.3776 43.3618 22.5484 43.5497L31.7439 53.6648C31.9375 53.8779 32.2121 53.9993 32.5 53.9993C32.7879 53.9993 33.0624 53.8779 33.256 53.6648L42.4516 43.5497C42.6224 43.3618 42.7171 43.1171 42.7172 42.8631V15.3787C42.7168 15.0685 42.5754 14.7753 42.333 14.5818L33.1375 7.22537C32.7646 6.9276 32.2353 6.9276 31.8624 7.22537L22.6669 14.5818C22.4245 14.7753 22.2832 15.0685 22.2827 15.3787V42.8631Z" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M42.6171 14.9209L32.5081 17.9534L22.3992 14.9209" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.3828 43.2862L32.5081 46.3227L42.6334 43.2862" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <filter id="filter0_f_10308_396" x="0.155029" y="2.00018" width="64.7075" height="56.9994" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10308_396"/>
+                </filter>
+                </defs>
+            </svg>
+                
+    
+            <h3>Account created!</h3>
+    
+            <ul class="features">
+                <li>
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.125 12.24C19.1267 10.2541 18.3708 8.33632 17 6.84896V3.4C17 1.52223 15.4144 0 13.4584 0C11.5024 0 9.9167 1.52223 9.9167 3.4V4.10856C5.93113 4.43583 2.72257 7.38658 2.21093 11.1952C1.69928 15.0037 4.02303 18.6394 7.7917 19.9267V20.7985L6.58187 21.9586C6.4491 22.0863 6.3747 22.2595 6.37503 22.44C6.37547 22.6203 6.44976 22.7933 6.58187 22.9214L7.7917 24.0829V24.8798L6.58187 26.0413C6.30535 26.3068 6.30535 26.7373 6.58187 27.0028L7.7917 28.1629V29.92C7.79136 30.1005 7.86577 30.2737 7.99853 30.4014L10.1235 32.4414C10.2564 32.5693 10.4369 32.6412 10.625 32.6412C10.8132 32.6412 10.9936 32.5693 11.1265 32.4414L13.2515 30.4014C13.3843 30.2737 13.4587 30.1005 13.4584 29.92V19.9267C16.8471 18.7684 19.1141 15.6932 19.125 12.24ZM10.625 8.16C11.4074 8.16 12.0417 8.76889 12.0417 9.52C12.0417 10.2711 11.4074 10.88 10.625 10.88C9.84263 10.88 9.20837 10.2711 9.20837 9.52C9.20837 8.76889 9.84263 8.16 10.625 8.16ZM15.5834 3.4C15.5834 2.27334 14.632 1.36 13.4584 1.36C12.2848 1.36 11.3334 2.27334 11.3334 3.4V6.8H12.75V4.3384C13.7689 4.59209 14.7297 5.0256 15.5834 5.6168V3.4Z" fill="#5CBF4A"/>
+                        <path d="M31.7867 24.5154L24.42 17.4434C26.2797 13.7666 24.989 9.33569 21.4124 7.11824C21.148 6.9518 20.8007 6.97373 20.5613 7.17199C20.3219 7.37025 20.2484 7.69683 20.3811 7.97232C22.6142 12.5962 20.9335 18.0929 16.4513 20.8243C16.1866 20.9871 16.0653 21.2979 16.1535 21.5875C16.2416 21.8772 16.518 22.0764 16.8323 22.0769H16.8408C18.0873 22.0655 19.316 21.7921 20.4406 21.2758L21.3614 22.0606V23.8C21.3614 24.1756 21.6786 24.48 22.0698 24.48H23.8916L24.1948 24.7846V26.52C24.1948 26.8956 24.5119 27.2 24.9031 27.2H26.4883L27.7874 28.375C27.9189 28.4939 28.0927 28.5601 28.2733 28.56H31.2852C31.6764 28.56 31.9935 28.2556 31.9935 27.88V24.9954C31.9935 24.8154 31.9191 24.6428 31.7867 24.5154Z" fill="#5CBF4A"/>
+                        </svg>
+                        
+                    <div>
+                        <h4>Keys created</h4>
+                        <span>They’re encrypted as they’re created.</span>
+                    </div>
+                </li>
+                <li>
+                    <svg width="47" height="31" viewBox="0 0 47 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3737 27.3881L20.2431 29.895C20.139 30.1257 19.8676 30.2284 19.6368 30.1243L17.13 28.9937C17.019 28.9439 16.9324 28.852 16.8892 28.7383L16.2961 27.1706L14.5938 26.9116C14.2409 26.8583 13.9511 26.605 13.8509 26.2625C13.7508 25.92 13.8585 25.5505 14.1271 25.3154L15.229 24.3483L14.8959 23.468L12.741 22.8592C12.4347 22.7732 12.1948 22.5346 12.1073 22.2286C12.0198 21.9227 12.0972 21.5932 12.3118 21.3583L13.5784 19.9858L12.517 17.1821C9.19096 17.1977 6.33081 14.83 5.72493 11.5596C5.11906 8.28916 6.94123 5.05403 10.0521 3.87705C13.1629 2.70008 16.6702 3.91882 18.3809 6.77123C20.0915 9.62364 19.515 13.2916 17.0117 15.4816L21.3843 27.0369C21.4275 27.1508 21.4237 27.2771 21.3737 27.3881ZM10.3146 7.3165C10.0024 8.00874 10.3104 8.82301 11.0027 9.13522C11.6949 9.44743 12.5092 9.13936 12.8214 8.44711C13.1336 7.75487 12.8255 6.9406 12.1333 6.62839C11.4411 6.31618 10.6268 6.62426 10.3146 7.3165Z" fill="#5CBF4A"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.6322 2.9246L25.7628 0.417765C25.8668 0.187018 26.1383 0.0843246 26.369 0.188395L28.8759 1.31901C28.9868 1.36882 29.0734 1.46071 29.1166 1.57442L29.7098 3.14216L31.4121 3.40111C31.765 3.45444 32.0548 3.70771 32.1549 4.05023C32.2551 4.39276 32.1473 4.76226 31.8788 4.99729L30.7769 5.96444L31.1099 6.84471L33.2648 7.45357C33.5712 7.53951 33.8111 7.77818 33.8986 8.08412C33.9861 8.39006 33.9087 8.71949 33.6941 8.95443L32.4274 10.327L33.4889 13.1306C36.8149 13.1151 39.675 15.4828 40.2809 18.7532C40.8868 22.0236 39.0646 25.2587 35.9538 26.4357C32.8429 27.6127 29.3357 26.3939 27.625 23.5415C25.9143 20.6891 26.4909 17.0211 28.9942 14.8311L24.6216 3.2758C24.5783 3.16198 24.5821 3.03561 24.6322 2.9246ZM35.6913 22.9962C36.0035 22.304 35.6954 21.4897 35.0032 21.1775C34.3109 20.8653 33.4967 21.1734 33.1845 21.8656C32.8722 22.5579 33.1803 23.3721 33.8726 23.6843C34.5648 23.9966 35.3791 23.6885 35.6913 22.9962Z" fill="#5CBF4A"/>
+                        </svg>
+                    <div>
+                        <h4>Keys divided</h4>
+                        <span>They’re separated into fragments, or shards.</span>
+                    </div>
+                </li>
+                <li>
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5292 15.0675C10.6224 14.9751 10.6424 14.8319 10.5782 14.7175C9.92961 13.5435 9.92961 12.1185 10.5782 10.9445C10.6429 10.8302 10.6228 10.6867 10.5292 10.5945L8.71152 8.78267C8.65063 8.7219 8.56602 8.69111 8.48032 8.69853C8.39461 8.70595 8.31656 8.75083 8.26702 8.82117C6.57766 11.2292 6.57766 14.4375 8.26702 16.8455C8.31628 16.9164 8.39451 16.9617 8.48052 16.9692C8.56684 16.9766 8.6521 16.9459 8.71385 16.8852L10.5292 15.0675Z" fill="#5CBF4A"/>
+                        <path d="M14 14.9917C15.192 14.9917 16.1583 14.0254 16.1583 12.8333C16.1583 11.6413 15.192 10.675 14 10.675C12.808 10.675 11.8417 11.6413 11.8417 12.8333C11.8417 14.0254 12.808 14.9917 14 14.9917Z" fill="#5CBF4A"/>
+                        <path d="M11.7658 9.3625C11.8582 9.4557 12.0014 9.47576 12.1158 9.4115C13.2899 8.76292 14.7148 8.76292 15.8888 9.4115C16.0032 9.47576 16.1465 9.4557 16.2388 9.3625L18.0553 7.54483C18.1161 7.48395 18.1469 7.39933 18.1395 7.31363C18.132 7.22792 18.0872 7.14987 18.0168 7.10033C15.6088 5.41097 12.4005 5.41097 9.9925 7.10033C9.92217 7.14987 9.87729 7.22792 9.86986 7.31363C9.86244 7.39933 9.89323 7.48395 9.954 7.54483L11.7658 9.3625Z" fill="#5CBF4A"/>
+                        <path d="M17.4708 10.6003C17.3768 10.6923 17.3567 10.8361 17.4218 10.9503C18.075 12.1323 18.0702 13.568 17.409 14.7455C17.3529 14.8453 17.3701 14.9702 17.451 15.0512L19.2873 16.8887C19.3486 16.9501 19.4342 16.9809 19.5206 16.9727C19.6063 16.965 19.6843 16.9203 19.7341 16.8502C21.4233 14.4417 21.4233 11.2332 19.7341 8.82467C19.6836 8.75629 19.6055 8.71363 19.5206 8.708C19.4342 8.70006 19.3488 8.73083 19.2873 8.792L17.4708 10.6003Z" fill="#5CBF4A"/>
+                        <path d="M16.233 16.3042C16.1404 16.2113 15.9975 16.1913 15.883 16.2552C14.7098 16.9038 13.2855 16.9038 12.1123 16.2552C11.9979 16.1909 11.8547 16.211 11.7623 16.3042L9.94932 18.1218C9.88828 18.1834 9.85754 18.2688 9.86532 18.3552C9.87293 18.4411 9.91821 18.5193 9.98899 18.5687C12.3966 20.2566 15.6034 20.2566 18.011 18.5687C18.0789 18.5177 18.1214 18.4398 18.1277 18.3552C18.1364 18.2687 18.1055 18.1829 18.0437 18.1218L16.233 16.3042Z" fill="#5CBF4A"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.91667 6.32405e-05H25.0833C26.6641 -0.0272603 27.9687 1.22991 28 2.81056V22.8562C27.9913 23.9247 27.3753 24.895 26.4122 25.3576C26.3128 25.4068 26.25 25.508 26.25 25.6189V26.8334C26.25 27.4777 25.7277 28.0001 25.0833 28.0001C24.439 28.0001 23.9167 27.4777 23.9167 26.8334V25.9584C23.9167 25.7973 23.7861 25.6667 23.625 25.6667H4.375C4.21392 25.6667 4.08333 25.7973 4.08333 25.9584V26.8334C4.08333 27.4777 3.561 28.0001 2.91667 28.0001C2.27233 28.0001 1.75 27.4777 1.75 26.8334V25.6189C1.75 25.508 1.68716 25.4068 1.58783 25.3576C0.624656 24.895 0.00867221 23.9247 0 22.8562V2.81056C0.0312803 1.22991 1.33594 -0.0272603 2.91667 6.32405e-05ZM14 22.1667C19.1547 22.1667 23.3333 17.988 23.3333 12.8333C23.3275 7.68107 19.1523 3.50579 14 3.5C8.84534 3.5 4.66667 7.67868 4.66667 12.8333C4.66667 17.988 8.84534 22.1667 14 22.1667Z" fill="#5CBF4A"/>
+                    </svg>    
+                    <div>
+                        <h4>Keys stored</h4>
+                        <span>Shards are stored with you and Zest.</span>
+                    </div>
+                </li>
+            </ul>
+    
+            <div class="bottom-button-container">
+                <button class="primary" id="toStep4">Set up security</button>
+            </div>
+    
+        </div>
+
+        <div class="step step4">
+            <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M47.5828 41.5068C47.5828 43.7448 45.7681 45.5575 43.5321 45.5575H5.05068C2.8147 45.5575 1 43.7448 1 41.5068V5.05068C1 2.8147 2.8147 1 5.05068 1H43.5321C45.7681 1 47.5828 2.8147 47.5828 5.05068V41.5068V41.5068Z" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.05078 45.5577V47.583" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M43.5321 45.5577V47.583" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.07593 33.4054V35.4308C7.07593 37.6688 8.89063 39.4815 11.1266 39.4815H37.456C39.692 39.4815 41.5067 37.6688 41.5067 35.4308V11.1267C41.5067 8.89075 39.692 7.07605 37.456 7.07605H11.1266C8.89063 7.07605 7.07593 8.89075 7.07593 11.1267V13.1521" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.07593 19.2291V27.3304" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.05078 19.2281H9.10146V13.1521H5.05078V19.2281Z" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.05078 33.4046H9.10146V27.3286H5.05078V33.4046Z" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M34.4181 23.2783C34.4181 28.3133 30.3371 32.3924 25.3041 32.3924C20.2711 32.3924 16.1901 28.3133 16.1901 23.2783C16.1901 18.2454 20.2711 14.1643 25.3041 14.1643C30.3371 14.1643 34.4181 18.2454 34.4181 23.2783V23.2783Z" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M30.3674 23.2783C30.3674 26.0753 28.1011 28.3417 25.3041 28.3417C22.5071 28.3417 20.2407 26.0753 20.2407 23.2783C20.2407 20.4834 22.5071 18.215 25.3041 18.215C28.1011 18.215 30.3674 20.4834 30.3674 23.2783V23.2783Z" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25.3041 14.1643V18.215" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.8601 16.8348L21.7239 19.7007" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.1901 23.2798H20.2407" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.8601 29.7242L21.7239 26.8604" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25.3041 32.3924V28.3417" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M31.7479 29.7244L28.884 26.8586" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M34.4181 23.2798H30.3674" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M31.7479 16.8348L28.884 19.7007" stroke="#87F292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+            <h3>Finish setting up your wallet</h3>
+            <p>These methods can be used to locate your account and log back in on a new device.</p>
+
+            <span class="post-login">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.64 8.59867C24.2843 8.33648 23.839 8.2264 23.4021 8.29267C22.9652 8.35894 22.5726 8.59612 22.3106 8.952L14.412 19.672L9.38929 15.6533C8.66895 15.1015 7.63964 15.2268 7.07266 15.9352C6.50568 16.6437 6.60904 17.6754 7.30529 18.2573L13.6826 23.3587C14.0386 23.6371 14.4916 23.7608 14.9397 23.7019C15.3878 23.6429 15.7934 23.4064 16.0653 23.0453L24.9986 10.9293C25.2603 10.5728 25.3696 10.1268 25.3023 9.68967C25.235 9.25252 24.9968 8.86004 24.64 8.59867Z" fill="#5CBF4A"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 16C0 7.16344 7.16344 0 16 0C24.8326 0.00955313 31.9904 7.1674 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM2.66667 16C2.66667 23.3638 8.6362 29.3333 16 29.3333C23.3604 29.3253 29.3253 23.3604 29.3333 16C29.3333 8.6362 23.3638 2.66667 16 2.66667C8.6362 2.66667 2.66667 8.6362 2.66667 16Z" fill="#5CBF4A"/>
+                    </svg>
+                
+                    Social Login complete
+            </span>
+            
+            <div href="" class="move-button">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2667 29.3333L3.33333 29.3853C2.96514 29.3853 2.66667 29.0869 2.66667 28.7187V21.74C2.66667 21.0036 2.06971 20.4067 1.33333 20.4067C0.596954 20.4067 0 21.0036 0 21.74V29.3907C0.00146842 30.8306 1.16803 31.9978 2.608 32H10.2667C11.003 32 11.6 31.403 11.6 30.6667C11.6 29.9303 11.003 29.3333 10.2667 29.3333Z" fill="#5CBF4A"/>
+                    <path d="M1.33333 11.6C2.06971 11.6 2.66667 11.003 2.66667 10.2667L2.61333 3.33333C2.61333 2.96514 2.91181 2.66667 3.28 2.66667H10.2667C11.003 2.66667 11.6 2.06971 11.6 1.33333C11.6 0.596954 11.003 0 10.2667 0H2.608C1.16803 0.00220441 0.00146842 1.16937 0 2.60933V10.2667C0 11.003 0.596954 11.6 1.33333 11.6Z" fill="#5CBF4A"/>
+                    <path d="M30.6666 20.4067C29.9302 20.4067 29.3333 21.0036 29.3333 21.74L29.3866 28.6613C29.3866 29.0295 29.0881 29.328 28.7199 29.328H21.7399C21.0036 29.328 20.4066 29.925 20.4066 30.6613C20.4066 31.3977 21.0036 31.9947 21.7399 31.9947H29.3919C30.8298 31.9925 31.9955 30.8286 31.9999 29.3907V21.74C31.9999 21.0036 31.403 20.4067 30.6666 20.4067Z" fill="#5CBF4A"/>
+                    <path d="M29.3919 0H21.7399C21.0036 0 20.4066 0.596954 20.4066 1.33333C20.4066 2.06971 21.0036 2.66667 21.7399 2.66667L28.6666 2.61467C29.0348 2.61467 29.3333 2.91314 29.3333 3.28133V10.2667C29.3333 11.003 29.9302 11.6 30.6666 11.6C31.403 11.6 31.9999 11.003 31.9999 10.2667V2.60933C31.9985 1.16937 30.8319 0.00220441 29.3919 0Z" fill="#5CBF4A"/>
+                    <path d="M11.9506 14C12.0091 14.2929 12.1423 14.5657 12.3373 14.792C12.4284 15.6376 12.8235 16.4213 13.4493 16.9973V18.4813L12.7053 18.756C10.028 19.7413 8.09463 20.452 7.49063 21.6613C6.98274 22.7114 6.70197 23.8568 6.66663 25.0227C6.66663 25.3909 6.9651 25.6893 7.33329 25.6893H24.6666C25.0348 25.6893 25.3333 25.3909 25.3333 25.0227C25.2972 23.8586 25.0164 22.7151 24.5093 21.6667C23.904 20.4573 21.9693 19.7467 19.292 18.7613L18.5506 18.4867V17.0027C19.1764 16.4267 19.5716 15.6429 19.6626 14.7973C19.8576 14.5711 19.9908 14.2982 20.0493 14.0053C20.202 13.4398 20.105 12.8358 19.7826 12.3467V12.3333C20.2802 11.3049 20.4969 10.1632 20.4106 9.024C20.128 7.60933 18.304 7.064 16.6906 7.024C15.4482 6.87138 14.2025 7.28219 13.2946 8.144C12.8628 8.21426 12.4751 8.44946 12.2133 8.8C11.48 9.78933 11.964 11.4213 12.236 12.3187C11.898 12.8098 11.7936 13.4249 11.9506 14Z" fill="#5CBF4A"/>
+                    </svg>
+                <div>
+                    <h4>Set up Authenticator App</h4>
+                    <span>Recovery email, password, etc.</span>
+                </div>
+
+                <span class="next-arrow">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5628 10L5.34301 1.78019C4.93577 1.37295 4.93577 0.712674 5.34301 0.305432C5.75025 -0.101811 6.41053 -0.101811 6.81777 0.305432L15.353 8.84064C15.6604 9.14758 15.8334 9.56486 15.8334 10C15.8334 10.4351 15.6604 10.8524 15.3524 11.1599L6.81777 19.6946C6.41053 20.1018 5.75025 20.1018 5.34301 19.6946C4.93577 19.2873 4.93577 18.6271 5.34301 18.2198L13.5628 10Z" fill="white"/>
+                        </svg>                        
+                </span>
+            </div>
+
+            <div class="move-button">
+                <svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.73516 19.9999H26.5441C30.1171 19.597 32.8641 16.5584 33 12.8588C32.9362 8.8951 29.7939 5.71894 25.9452 5.72806C25.7157 5.72495 25.5059 5.59386 25.3971 5.38564C23.615 2.04295 20.1972 -0.0243507 16.4949 0.00101854C11.4924 -0.0712267 7.22183 3.7077 6.53707 8.81246C6.49997 9.12086 6.23078 9.34245 5.93056 9.31171C4.44211 9.13145 2.94901 9.6073 1.81948 10.6219C0.689948 11.6365 0.0291306 13.0954 0 14.6388C0 20.0836 5.73516 19.9999 5.73516 19.9999Z" fill="#5CBF4A"/>
+                    <path d="M10.2122 12.8345C10.0051 13.0358 9.94306 13.3389 10.0551 13.6022C10.1671 13.8655 10.431 14.037 10.7235 14.0365L13.6125 14.0365C14.0114 14.0365 14.3347 14.3516 14.3347 14.7402L14.3347 23.8888C14.3347 25.0548 15.3048 26 16.5014 26C17.6981 26 18.6682 25.0548 18.6682 23.8888L18.6682 14.7402C18.6682 14.3516 18.9915 14.0365 19.3904 14.0365L22.2793 14.0365C22.571 14.0359 22.8336 13.8644 22.9451 13.6019C23.0566 13.3393 22.9951 13.0372 22.7892 12.8359L17.0113 7.20605C16.7293 6.93132 16.2721 6.93132 15.9901 7.20605L10.2122 12.8345Z" fill="#2E2E31"/>
+                    </svg>
+                <div>
+                    <h4>Set up Cloud backup</h4>
+                    <span>Recovery email, password, etc.</span>
+                </div>
+
+                <span class="next-arrow">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5628 10L5.34301 1.78019C4.93577 1.37295 4.93577 0.712674 5.34301 0.305432C5.75025 -0.101811 6.41053 -0.101811 6.81777 0.305432L15.353 8.84064C15.6604 9.14758 15.8334 9.56486 15.8334 10C15.8334 10.4351 15.6604 10.8524 15.3524 11.1599L6.81777 19.6946C6.41053 20.1018 5.75025 20.1018 5.34301 19.6946C4.93577 19.2873 4.93577 18.6271 5.34301 18.2198L13.5628 10Z" fill="white"/>
+                        </svg>
+                </span>
+            </div>
+        </div>
+
+        <div class="step step5">
+            <svg width="66" height="62" viewBox="0 0 66 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_10308_608)">
+                <path d="M32.9419 46.4898V54.602" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M36.3349 48.3211L29.551 52.7707" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M36.3165 52.7974L29.5671 48.2951" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M45.1104 46.4895V54.6018" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M48.5033 48.3216L41.7195 52.7711" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M48.485 52.7975L41.7356 48.2952" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M45.1441 40.1857V11.9998C45.1441 10.8952 44.2487 9.99976 43.1441 9.99976H7C5.89543 9.99976 5 10.8952 5 11.9998V48.1439C5 49.2485 5.89543 50.1439 7 50.1439H24.0721" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M31.1808 24.8356C31.1832 21.814 28.9764 19.2447 25.9891 18.7911C23.0018 18.3374 20.1317 20.1358 19.237 23.0219C18.3423 25.9079 19.6919 29.0144 22.412 30.3301L19.8358 41.4168H30.3081L27.7285 30.3301C29.8373 29.3117 31.1783 27.1774 31.1808 24.8356V24.8356Z" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <g filter="url(#filter1_f_10308_608)">
+                <path d="M57.3909 46.4893V54.6015" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <g filter="url(#filter2_f_10308_608)">
+                <path d="M60.7839 48.3213L54 52.7709" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <g filter="url(#filter3_f_10308_608)">
+                <path d="M60.7655 52.7972L54.0161 48.2949" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <path d="M32.9419 46.4898V54.602" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M36.3349 48.3211L29.551 52.7707" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M36.3165 52.7974L29.5671 48.2951" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M45.1104 46.4895V54.6018" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M48.5033 48.3216L41.7195 52.7711" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M48.485 52.7975L41.7356 48.2952" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M45.1441 40.1857V11.9998C45.1441 10.8952 44.2487 9.99976 43.1441 9.99976H7C5.89543 9.99976 5 10.8952 5 11.9998V48.1439C5 49.2485 5.89543 50.1439 7 50.1439H24.0721" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M31.1808 24.8356C31.1832 21.814 28.9764 19.2447 25.9891 18.7911C23.0018 18.3374 20.1317 20.1358 19.237 23.0219C18.3423 25.9079 19.6919 29.0144 22.412 30.3301L19.8358 41.4168H30.3081L27.7285 30.3301C29.8373 29.3117 31.1783 27.1774 31.1808 24.8356V24.8356Z" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M57.3909 46.4893V54.6015" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M60.7839 48.3213L54 52.7709" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M60.7655 52.7972L54.0161 48.2949" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <filter id="filter0_f_10308_608" x="-2" y="3" width="55.5034" height="56.602" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10308_608"/>
+                </filter>
+                <filter id="filter1_f_10308_608" x="52.3909" y="41.4893" width="10" height="18.1122" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10308_608"/>
+                </filter>
+                <filter id="filter2_f_10308_608" x="49" y="43.3212" width="16.7839" height="14.4498" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10308_608"/>
+                </filter>
+                <filter id="filter3_f_10308_608" x="49.0161" y="43.2948" width="16.7495" height="14.5025" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10308_608"/>
+                </filter>
+                </defs>
+                </svg>
+            
+            <h3>Create a backup to Cloud</h3>
+            <p>If you lose this device, you can recover your encrypted wallet backup from iCloud.</p>
+
+            <div class="input-container">
+                <label for="pwd">Backup password</label>
+                <input type="text" name="" id="pwd" placeholder="Password">
+            </div>
+
+            <div class="input-container">
+                <label for="cpwd">Confirm password</label>
+                <input type="text" name="" id="cpwd" placeholder="Password">
+            </div>
+
+            <div class="bottom-button-container">
+                <button class="primary" id="toStep6">Continue</button>
+            </div>
+        </div>
+
+        <div class="step step6">
+            <svg width="69" height="62" viewBox="0 0 69 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_10308_221)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 32C18.9853 32 21 29.9853 21 27.5C21 25.0147 18.9853 23 16.5 23C14.0147 23 12 25.0147 12 27.5C12 29.9853 14.0147 32 16.5 32Z" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M24 41C23.5824 37.0169 20.35 34 16.5 34C12.65 34 9.41762 37.0169 9 41" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.9375 16.7378H49.0625" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M27.4314 41.1792H7.8125C6.77697 41.1792 5.9375 40.3374 5.9375 39.2991V11.0979C5.9375 10.0595 6.77697 9.21777 7.8125 9.21777H22.8125H47.1875C48.223 9.21777 49.0625 10.0595 49.0625 11.0979V20.0587" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28 23H37" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28 28H32" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <g filter="url(#filter1_f_10308_221)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M60.5771 41.1474C60.5771 47.5401 55.3504 52.7225 48.9028 52.7225C42.4553 52.7225 37.2285 47.5401 37.2285 41.1474C37.2285 34.7546 42.4553 29.5723 48.9028 29.5723C51.999 29.5723 54.9685 30.7918 57.1578 32.9625C59.3472 35.1333 60.5771 38.0775 60.5771 41.1474V41.1474Z" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M48.9028 27V31.5014" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M34.6343 41.1465H39.1743" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M48.9028 55.2946V50.7932" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M63.1714 41.1465H58.6313" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 32.0004C18.9853 32.0004 21 29.9857 21 27.5004C21 25.0151 18.9853 23.0004 16.5 23.0004C14.0147 23.0004 12 25.0151 12 27.5004C12 29.9857 14.0147 32.0004 16.5 32.0004Z" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M24 41.0004C23.5824 37.0173 20.35 34.0004 16.5 34.0004C12.65 34.0004 9.41762 37.0173 9 41.0004" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.9375 16.7382H49.0625" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M27.4314 41.1796H7.8125C6.77697 41.1796 5.9375 40.3378 5.9375 39.2995V11.0983C5.9375 10.0599 6.77697 9.2182 7.8125 9.2182H22.8125H47.1875C48.223 9.2182 49.0625 10.0599 49.0625 11.0983V20.0591" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28 23.0004H37" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28 28.0004H32" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M60.5771 41.1474C60.5771 47.5401 55.3504 52.7225 48.9028 52.7225C42.4553 52.7225 37.2285 47.5401 37.2285 41.1474C37.2285 34.7546 42.4553 29.5723 48.9028 29.5723C51.999 29.5723 54.9685 30.7918 57.1578 32.9625C59.3472 35.1333 60.5771 38.0775 60.5771 41.1474V41.1474Z" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M48.9028 27V31.5014" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M34.6343 41.1465H39.1743" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M48.9028 55.2946V50.7932" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M63.1714 41.1465H58.6313" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <filter id="filter0_f_10308_221" x="0.9375" y="4.21777" width="53.125" height="41.9614" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10308_221"/>
+                </filter>
+                <filter id="filter1_f_10308_221" x="29.6343" y="22" width="38.5371" height="38.2946" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10308_221"/>
+                </filter>
+                </defs>
+                </svg>
+                
+            
+            <h3>Connect to an Authenticator App</h3>
+            <p>Use this QR code to enable multi-factor authentication and verify your identity.</p>
+
+            <div class="qrcode">
+                <svg width="187" height="187" viewBox="0 0 187 187" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="187" height="187" rx="20" fill="#DDDDDD"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M63.8261 69.6805H28.7005C25.4672 69.6805 22.8462 67.0594 22.8462 63.8262V28.7005C22.8462 25.4673 25.4672 22.8463 28.7005 22.8463H63.8261C67.0594 22.8463 69.6804 25.4673 69.6804 28.7005V63.8262C69.6804 67.0594 67.0594 69.6805 63.8261 69.6805ZM36.0183 34.5548C35.21 34.5548 34.5547 35.2101 34.5547 36.0184V56.5084C34.5547 57.3167 35.21 57.9719 36.0183 57.9719H56.5083C57.3166 57.9719 57.9719 57.3167 57.9719 56.5084V36.0184C57.9719 35.2101 57.3166 34.5548 56.5083 34.5548H36.0183Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28.7005 116.515H63.8261C67.0594 116.515 69.6804 119.136 69.6804 122.369V157.495C69.6804 160.728 67.0594 163.349 63.8261 163.349H28.7005C25.4672 163.349 22.8462 160.728 22.8462 157.495V122.369C22.8462 119.136 25.4672 116.515 28.7005 116.515ZM56.5083 151.64C57.3166 151.64 57.9719 150.985 57.9719 150.177V129.687C57.9719 128.879 57.3166 128.223 56.5083 128.223H36.0183C35.21 128.223 34.5547 128.879 34.5547 129.687V150.177C34.5547 150.985 35.21 151.64 36.0183 151.64H56.5083Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M122.369 22.8463H157.495C160.728 22.8463 163.349 25.4673 163.349 28.7005V63.8262C163.349 67.0594 160.728 69.6805 157.495 69.6805H122.369C119.136 69.6805 116.515 67.0594 116.515 63.8262V28.7005C116.515 25.4673 119.136 22.8463 122.369 22.8463ZM150.177 57.9719C150.985 57.9719 151.64 57.3167 151.64 56.5084V36.0184C151.64 35.2101 150.985 34.5548 150.177 34.5548H129.687C128.878 34.5548 128.223 35.2101 128.223 36.0184V56.5084C128.223 57.3167 128.878 57.9719 129.687 57.9719H150.177Z" fill="black"/>
+                    <path d="M81.389 47.7269H87.2433C89.6682 47.7269 91.634 45.7612 91.634 43.3362C91.634 40.9113 89.6682 38.9455 87.2433 38.9455C86.435 38.9455 85.7797 38.2903 85.7797 37.4819V28.7005C85.7797 26.2756 83.8139 24.3098 81.389 24.3098C78.9641 24.3098 76.9983 26.2756 76.9983 28.7005V43.3362C76.9983 45.7612 78.9641 47.7269 81.389 47.7269Z" fill="black"/>
+                    <path d="M98.9517 33.0912C99.7601 33.0912 100.415 33.7465 100.415 34.5548V66.7533C100.415 69.1783 102.381 71.1441 104.806 71.1441C107.231 71.1441 109.197 69.1783 109.197 66.7533V28.7005C109.197 26.2756 107.231 24.3098 104.806 24.3098H98.9517C96.5268 24.3098 94.561 26.2756 94.561 28.7005C94.561 31.1255 96.5268 33.0912 98.9517 33.0912Z" fill="black"/>
+                    <path d="M56.5083 84.3162C56.5083 86.7411 58.4741 88.7069 60.899 88.7069H81.389C83.8139 88.7069 85.7797 86.7411 85.7797 84.3162V60.8991C85.7797 58.4741 83.8139 56.5084 81.389 56.5084C78.9641 56.5084 76.9983 58.4741 76.9983 60.8991V78.4619C76.9983 79.2702 76.343 79.9255 75.5347 79.9255H60.899C58.4741 79.9255 56.5083 81.8913 56.5083 84.3162Z" fill="black"/>
+                    <path d="M40.4091 79.9255C37.9842 79.9255 36.0184 81.8913 36.0184 84.3162V98.9519C36.0184 99.7602 35.3631 100.415 34.5548 100.415H28.7005C26.2756 100.415 24.3098 102.381 24.3098 104.806C24.3098 107.231 26.2756 109.197 28.7005 109.197H104.806C107.231 109.197 109.197 107.231 109.197 104.806V87.2433C109.197 84.8184 107.231 82.8526 104.806 82.8526C102.381 82.8526 100.415 84.8184 100.415 87.2433V98.9519C100.415 99.7602 99.7602 100.415 98.9519 100.415H46.2634C45.4551 100.415 44.7998 99.7602 44.7998 98.9519V84.3162C44.7998 81.8913 42.834 79.9255 40.4091 79.9255Z" fill="black"/>
+                    <path d="M103.343 122.369C103.343 119.944 101.377 117.978 98.9518 117.978H81.389C78.9641 117.978 76.9983 119.944 76.9983 122.369V145.786C76.9983 148.211 78.9641 150.177 81.389 150.177C83.8139 150.177 85.7797 148.211 85.7797 145.786V128.223C85.7797 127.415 86.435 126.76 87.2433 126.76H98.9518C101.377 126.76 103.343 124.794 103.343 122.369Z" fill="black"/>
+                    <path d="M157.495 153.104H107.733C106.925 153.104 106.27 152.449 106.27 151.64V139.932C106.27 137.507 104.304 135.541 101.879 135.541C99.4541 135.541 97.4883 137.507 97.4883 139.932V157.495C97.4883 159.92 99.4541 161.885 101.879 161.885H157.495C159.92 161.885 161.885 159.92 161.885 157.495C161.885 155.07 159.92 153.104 157.495 153.104Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M137.005 141.395H119.442C117.017 141.395 115.051 139.43 115.051 137.005V119.442C115.051 117.017 117.017 115.051 119.442 115.051H137.005C139.429 115.051 141.395 117.017 141.395 119.442V137.005C141.395 139.43 139.429 141.395 137.005 141.395ZM125.296 123.833C124.488 123.833 123.832 124.488 123.832 125.296V131.15C123.832 131.959 124.488 132.614 125.296 132.614H131.15C131.959 132.614 132.614 131.959 132.614 131.15V125.296C132.614 124.488 131.959 123.833 131.15 123.833H125.296Z" fill="black"/>
+                    <path d="M154.567 97.4883C152.143 97.4883 150.177 99.4541 150.177 101.879V139.932C150.177 142.357 152.143 144.323 154.567 144.323C156.992 144.323 158.958 142.357 158.958 139.932V101.879C158.958 99.4541 156.992 97.4883 154.567 97.4883Z" fill="black"/>
+                    <path d="M158.958 81.389C158.958 78.9641 156.992 76.9983 154.568 76.9983H122.369C119.944 76.9983 117.978 78.9641 117.978 81.389V98.9519C117.978 101.377 119.944 103.343 122.369 103.343C124.794 103.343 126.76 101.377 126.76 98.9519V87.2433C126.76 86.435 127.415 85.7798 128.223 85.7798H154.568C156.992 85.7798 158.958 83.814 158.958 81.389Z" fill="black"/>
+                    </svg>
+            </div>
+
+            <div class="input-container">
+                <label for="code">Enter code</label>
+                <input type="text" name="" id="code" placeholder="Authenticator code">
+            </div>
+
+            <div class="bottom-button-container">
+                <button class="primary" id="clearPre">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="custody home">
+        <div class="top-bar">Home
+            <a href="javascript:void(0)" class="menu-trigger"></a>
+        </div>
+
+        <div class="balance-c">
+            <div class="title">My balance</div>
+            <div class="balance">$0.00</div>
+
+            <div class="coins">
+                <div class="coin">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20ZM19.992 10V17.2877L25.6602 20.1218L19.992 10ZM19.6682 17.6113V23.9192L14 20.4454L19.6682 17.6113ZM19.992 17.6113V23.9192L25.6602 20.4454L19.992 17.6113ZM25.6602 21.498L19.992 25.1419V30.0003L25.6602 21.498ZM19.6682 25.1419L14 21.498L19.6682 30.0003V25.1419ZM19.6682 17.2877V10L14 20.1218L19.6682 17.2877ZM5.75 20C5.75 12.1299 12.1299 5.75 20 5.75C27.8701 5.75 34.25 12.1299 34.25 20C34.25 27.8701 27.8701 34.25 20 34.25C12.1299 34.25 5.75 27.8701 5.75 20ZM20 4.25C11.3015 4.25 4.25 11.3015 4.25 20C4.25 28.6985 11.3015 35.75 20 35.75C28.6985 35.75 35.75 28.6985 35.75 20C35.75 11.3015 28.6985 4.25 20 4.25Z" fill="#547FEF"/>
+                        </svg>
+                    <span>Ethereum</span>
+                    <span>0.080 ETH</span>
+                </div>
+                <div class="coin">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20ZM26.9645 18.2289C27.2502 16.3411 25.7761 15.3196 23.742 14.6422L24.4048 12.0771L22.8049 11.6885L22.1649 14.1869C21.7421 14.087 21.3079 13.987 20.8736 13.8982L21.5136 11.3886L19.9137 11L19.2623 13.554C18.9081 13.4762 18.5652 13.3985 18.2338 13.3208V13.3097L16.0169 12.7767L15.5941 14.4423C15.5941 14.4423 16.7825 14.7088 16.7597 14.7199C17.4111 14.8754 17.5253 15.2973 17.5025 15.6305L16.7483 18.5509L16.7654 18.555L16.7654 18.555C16.808 18.565 16.8594 18.5771 16.9197 18.6064L16.9196 18.6064C16.8625 18.5953 16.8054 18.5842 16.7483 18.562L15.6969 22.6484C15.6169 22.8371 15.4112 23.1258 14.9655 23.0148C14.977 23.037 13.7999 22.7372 13.7999 22.7372L13 24.525L15.0913 25.0358C15.2571 25.0784 15.4208 25.1191 15.5833 25.1594L15.5835 25.1594L15.5838 25.1595C15.802 25.2136 16.018 25.2672 16.234 25.3245L15.5712 27.9118L17.1711 28.3004L17.8339 25.7353L17.8344 25.7355C18.2684 25.8465 18.7025 25.9575 19.1138 26.0574L18.4624 28.6114L20.0623 29L20.7251 26.4127C23.4677 26.9124 25.5247 26.7125 26.3817 24.3029C27.0788 22.3708 26.3475 21.2492 24.9076 20.5163C25.9703 20.2832 26.7589 19.6058 26.9645 18.2289ZM23.2963 23.2258C22.8431 25.0076 19.9505 24.2585 18.6517 23.9222C18.5422 23.8938 18.444 23.8684 18.3596 23.8476L19.2395 20.4164C19.3514 20.4439 19.489 20.4741 19.6451 20.5083L19.6451 20.5083C21.0034 20.8065 23.7678 21.4132 23.2963 23.2258ZM23.7991 18.1956C23.3793 19.8171 20.9932 19.1907 19.9072 18.9057L19.9071 18.9056C19.8106 18.8803 19.7245 18.8577 19.6509 18.8396L20.4508 15.7304C20.5441 15.7534 20.6589 15.7783 20.7892 15.8067L20.7893 15.8067C21.9199 16.0526 24.2192 16.5528 23.7991 18.1956ZM5.75 20C5.75 12.1299 12.1299 5.75 20 5.75C27.8701 5.75 34.25 12.1299 34.25 20C34.25 27.8701 27.8701 34.25 20 34.25C12.1299 34.25 5.75 27.8701 5.75 20ZM20 4.25C11.3015 4.25 4.25 11.3015 4.25 20C4.25 28.6985 11.3015 35.75 20 35.75C28.6985 35.75 35.75 28.6985 35.75 20C35.75 11.3015 28.6985 4.25 20 4.25Z" fill="#FB9914"/>
+                        </svg>                    
+                    <span>Bitcoin</span>
+                    <span>0.002329 BTC</span>
+                </div>
+                <div class="coin">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20ZM19.75 5.5C11.8799 5.5 5.5 11.8799 5.5 19.75C5.5 27.6201 11.8799 34 19.75 34C27.6201 34 34 27.6201 34 19.75C34 11.8799 27.6201 5.5 19.75 5.5ZM4 19.75C4 11.0515 11.0515 4 19.75 4C28.4485 4 35.5 11.0515 35.5 19.75C35.5 28.4485 28.4485 35.5 19.75 35.5C11.0515 35.5 4 28.4485 4 19.75ZM13 21C12.4477 21 12 20.5523 12 20C12 19.4477 12.4477 19 13 19H18.8333C18.9254 19 19 18.9254 19 18.8333V13C19 12.4477 19.4477 12 20 12C20.5523 12 21 12.4477 21 13V18.8333C21 18.9254 21.0746 19 21.1667 19H27C27.5523 19 28 19.4477 28 20C28 20.5523 27.5523 21 27 21H21.1667C21.0746 21 21 21.0746 21 21.1667V27C21 27.5523 20.5523 28 20 28C19.4477 28 19 27.5523 19 27V21.1667C19 21.0746 18.9254 21 18.8333 21H13Z" fill="#DDDDDD"/>
+                        </svg>
+                        <span>Add <br/> Crypto</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-list-card">
+            <div class="title">
+                Recent activity
+                <a href="javascript:void(0)">View all</a>
+            </div>
+            <ul class="order-list">
+                <li class="to"><span>To 0xxbYhvn4982388N...</span>-0.150 ETH</li>
+                <li class="from"><span>From 0x7x4bYhv23444nN...</span>+123 BTC</li>
+                <li class="from"><span>From 0x27xb343dYhvnN...</span>+0.150 ETH</li>
+            </ul>
+            
+        </div>
+
+        <div class="expCry-card">
+            <img src="./images/card_bg.png" alt="">
+            <div class="content">
+                <svg width="52" height="40" viewBox="0 0 52 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M45.7158 2.85714C45.7158 4.4351 44.4366 5.71429 42.8586 5.71429C41.2807 5.71429 40.0015 4.4351 40.0015 2.85714C40.0015 1.27919 41.2807 0 42.8586 0C44.4366 0 45.7158 1.27919 45.7158 2.85714Z" fill="#5CBF4A"/>
+                    <path d="M51.4286 14.2829C51.4286 15.8609 50.1495 17.1401 48.5715 17.1401C46.9935 17.1401 45.7144 15.8609 45.7144 14.2829C45.7144 12.705 46.9935 11.4258 48.5715 11.4258C50.1495 11.4258 51.4286 12.705 51.4286 14.2829Z" fill="#5CBF4A"/>
+                    <path d="M45.7158 37.1429C45.7158 35.5649 44.4366 34.2857 42.8586 34.2857C41.2807 34.2857 40.0015 35.5649 40.0015 37.1429C40.0015 38.7208 41.2807 40 42.8586 40C44.4366 40 45.7158 38.7208 45.7158 37.1429Z" fill="#5CBF4A"/>
+                    <path d="M51.4286 25.7171C51.4286 24.1391 50.1495 22.8599 48.5715 22.8599C46.9935 22.8599 45.7144 24.1391 45.7144 25.7171C45.7144 27.295 46.9935 28.5742 48.5715 28.5742C50.1495 28.5742 51.4286 27.295 51.4286 25.7171Z" fill="#5CBF4A"/>
+                    <path d="M5.71589 2.85714C5.71589 4.4351 6.99508 5.71429 8.57303 5.71429C10.151 5.71429 11.4302 4.4351 11.4302 2.85714C11.4302 1.27919 10.151 0 8.57303 0C6.99508 0 5.71589 1.27919 5.71589 2.85714Z" fill="#5CBF4A"/>
+                    <path d="M6.96182e-05 14.2829C6.96182e-05 15.8609 1.27926 17.1401 2.85721 17.1401C4.43517 17.1401 5.71436 15.8609 5.71436 14.2829C5.71436 12.705 4.43517 11.4258 2.85721 11.4258C1.27926 11.4258 6.96182e-05 12.705 6.96182e-05 14.2829Z" fill="#5CBF4A"/>
+                    <path d="M5.71589 37.1429C5.71589 35.5649 6.99508 34.2857 8.57303 34.2857C10.151 34.2857 11.4302 35.5649 11.4302 37.1429C11.4302 38.7208 10.151 40 8.57303 40C6.99508 40 5.71589 38.7208 5.71589 37.1429Z" fill="#5CBF4A"/>
+                    <path d="M6.96182e-05 25.7171C6.96182e-05 24.1391 1.27926 22.8599 2.85721 22.8599C4.43517 22.8599 5.71436 24.1391 5.71436 25.7171C5.71436 27.295 4.43517 28.5742 2.85721 28.5742C1.27926 28.5742 6.96182e-05 27.295 6.96182e-05 25.7171Z" fill="#5CBF4A"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.7154 34.2843C33.6052 34.2843 40.0011 27.8884 40.0011 19.9986C40.0011 12.1088 33.6052 5.71289 25.7154 5.71289C17.8256 5.71289 11.4297 12.1088 11.4297 19.9986C11.4297 27.8884 17.8256 34.2843 25.7154 34.2843ZM34.6434 19.9985C34.6434 24.9296 30.6459 28.927 25.7148 28.927C20.7837 28.927 16.7862 24.9296 16.7862 19.9985C16.7862 15.0674 20.7837 11.0699 25.7148 11.0699C30.6459 11.0699 34.6434 15.0674 34.6434 19.9985ZM36.4291 19.9985C36.4291 25.9158 31.6321 30.7127 25.7148 30.7127C19.7974 30.7127 15.0005 25.9158 15.0005 19.9985C15.0005 14.0811 19.7974 9.28418 25.7148 9.28418C31.6321 9.28418 36.4291 14.0811 36.4291 19.9985Z" fill="#5CBF4A"/>
+                    <path d="M37.5015 2.8584H32.1444L30.1646 8.21554" stroke="#5CBF4A" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M37.5015 37.5H32.1444L30.1646 32.1429" stroke="#5CBF4A" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M14.4506 2.8584H19.8078L21.7876 8.21554" stroke="#5CBF4A" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M14.4506 37.5H19.8078L21.7876 32.1429" stroke="#5CBF4A" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M7.54322 27.3947L12.7833 28.5086L14.4051 25.1087" stroke="#5CBF4A" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M7.54322 12.2527L12.7833 11.1389L14.4051 14.5388" stroke="#5CBF4A" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M43.6912 27.3947L38.4511 28.5086L36.8293 25.1087" stroke="#5CBF4A" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M43.6912 12.2527L38.4511 11.1389L36.8293 14.5388" stroke="#5CBF4A" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                <span>Explore crypto</span>
+                <button class="primary">Coming soon</button>
+            </div>
+        </div>
+
+        <a href="javascript:void(0)" class="add button"></a>
+        <div class="screen"></div>
+        <div class="options">
+            <div href="" class="move-button" id="goPayment">
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1246 0.121506C25.5395 -0.0783774 26.0328 -0.0186395 26.388 0.274506C26.6883 0.558118 26.821 0.97665 26.739 1.38151L21.0082 25.2878C20.8402 25.9861 20.3461 26.5608 19.6808 26.8318C19.0156 27.1027 18.2606 27.0368 17.6524 26.6546L13.2851 23.9074L10.818 26.3756C10.3383 26.8551 9.61704 26.9985 8.99043 26.7389C8.36381 26.4794 7.95513 25.8681 7.95486 25.1899V20.5538L1.27349 16.3508C0.59749 15.9258 0.200493 15.1717 0.232787 14.3738C0.265081 13.576 0.72173 12.8564 1.42986 12.4875L25.1246 0.121506ZM19.8086 5.69286C19.7268 5.58743 19.5823 5.55392 19.4625 5.61263L2.93399 14.2335C2.84476 14.28 2.78719 14.3707 2.78301 14.4712C2.77883 14.5718 2.82868 14.6669 2.91374 14.7206L8.66249 18.3375C8.77957 18.4123 8.93369 18.3909 9.02586 18.2869L19.8 6.04801C19.8867 5.94664 19.8903 5.7983 19.8086 5.69286ZM10.2037 23.8039V21.9656L11.3287 22.6755L10.2037 23.8039ZM18.7724 24.5608C18.8564 24.5267 18.9189 24.4544 18.9405 24.3664L23.2391 6.35513C23.2699 6.22921 23.2106 6.09854 23.0956 6.03876C22.9806 5.97898 22.8396 6.00556 22.7542 6.10313L11.0149 19.4355C10.9601 19.4968 10.9353 19.5792 10.9474 19.6605C10.959 19.7421 11.0059 19.8145 11.0756 19.8585L18.5164 24.5385C18.5932 24.5866 18.6884 24.5949 18.7724 24.5608Z" fill="#5CBF4A"/>
+                    </svg> 
+                <div>
+                    <h4>Send/Pay</h4>
+                    <span>Move assets between wallets or to payees.</span>
+                </div>
+            </div>
+
+            <div class="move-button" id="goSwap">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.23443 24.0369C2.60752 24.0374 2.96544 23.8893 3.22893 23.6251L20.6394 6.21463C20.6925 6.16144 20.7645 6.13149 20.8397 6.13138C20.9142 6.13147 20.9855 6.16146 21.0377 6.21463L23.2101 8.40163C23.3706 8.56345 23.6128 8.61242 23.8236 8.52566C24.0343 8.4389 24.1719 8.23354 24.1719 8.00563V1.25563C24.1719 0.94497 23.9201 0.69313 23.6094 0.69313H16.9067C16.6796 0.693176 16.4749 0.829708 16.3876 1.03928C16.3002 1.24886 16.3475 1.49039 16.5073 1.65163L18.6606 3.82063C18.7133 3.87301 18.743 3.94428 18.743 4.01863C18.743 4.09298 18.7133 4.16425 18.6606 4.21663L1.23993 21.6361C0.837639 22.0383 0.717275 22.6433 0.934981 23.1688C1.15269 23.6944 1.66558 24.037 2.23443 24.0369Z" fill="#5CBF4A"/>
+                    <path d="M24.172 23.7421V17.0529C24.1724 16.8256 24.036 16.6205 23.8263 16.5328C23.6166 16.4452 23.3748 16.4924 23.2135 16.6524L21.0332 18.8135C20.9238 18.9228 20.7466 18.9228 20.6372 18.8135L16.6862 14.9143C16.1332 14.3687 15.2427 14.3748 14.6972 14.9278C14.1517 15.4807 14.1577 16.3712 14.7107 16.9168L18.6358 20.789C18.6891 20.842 18.7191 20.9141 18.7191 20.9893C18.7191 21.0644 18.6891 21.1365 18.6358 21.1895L16.4635 23.3428C16.3016 23.5032 16.2527 23.7455 16.3394 23.9563C16.4262 24.167 16.6316 24.3046 16.8595 24.3046H23.6095C23.9201 24.3046 24.172 24.0528 24.172 23.7421Z" fill="#5CBF4A"/>
+                    <path d="M1.24997 1.38051C0.698118 1.92686 0.693084 2.81695 1.23872 3.36951L7.94934 10.1544C8.30056 10.5213 8.82237 10.6704 9.31441 10.5442C9.80645 10.4181 10.1922 10.0365 10.3236 9.54581C10.455 9.05516 10.3116 8.53178 9.94847 8.17663L3.23447 1.39176C2.68888 0.842279 1.80175 0.83725 1.24997 1.38051Z" fill="#5CBF4A"/>
+                    </svg>
+                    
+                <div>
+                    <h4>Swap</h4>
+                    <span>Trade one crypto asset for another.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="custody payment">
+        <div class="top-bar">Send/Pay
+            <a href="javascript:void(0)" class="go-back"></a>
+            <a href="javascript:void(0)" class="delete close-step"></a>
+        </div>
+        <div class="step step1 show">
+            <div class="paste-input">
+                <span>To</span>
+                <input type="text" placeholder="Name, phone, or wallet address" id="contractInput">
+                <a href="javascript:void(0)" class="paste-btn" id="contractPaste">Paste</a>
+            </div>
+    
+            <div class="contract-list show">
+                <h3>Contracts</h3>
+                <ul>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                    <li class="contract">
+                        <img src="./images/dingchao.png" alt="" title="personal photo">
+                        <div>
+                            <span>DingChao</span>
+                            <span>0xb71...79268</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="coin-list">
+                <h3>Accepted coins</h3>
+                <ul>
+                    <li class="coin">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20ZM26.9645 18.2289C27.2502 16.3411 25.7761 15.3196 23.742 14.6422L24.4048 12.0771L22.8049 11.6885L22.1649 14.1869C21.7421 14.087 21.3079 13.987 20.8736 13.8982L21.5136 11.3886L19.9137 11L19.2623 13.554C18.9081 13.4762 18.5652 13.3985 18.2338 13.3208V13.3097L16.0169 12.7767L15.5941 14.4423C15.5941 14.4423 16.7825 14.7088 16.7597 14.7199C17.4111 14.8754 17.5253 15.2973 17.5025 15.6305L16.7483 18.5509L16.7654 18.555L16.7654 18.555C16.808 18.565 16.8594 18.5771 16.9197 18.6064L16.9196 18.6064C16.8625 18.5953 16.8054 18.5842 16.7483 18.562L15.6969 22.6484C15.6169 22.8371 15.4112 23.1258 14.9655 23.0148C14.977 23.037 13.7999 22.7372 13.7999 22.7372L13 24.525L15.0913 25.0358C15.2571 25.0784 15.4208 25.1191 15.5833 25.1594L15.5835 25.1594L15.5838 25.1595C15.802 25.2136 16.018 25.2672 16.234 25.3245L15.5712 27.9118L17.1711 28.3004L17.8339 25.7353L17.8344 25.7355C18.2684 25.8465 18.7025 25.9575 19.1138 26.0574L18.4624 28.6114L20.0623 29L20.7251 26.4127C23.4677 26.9124 25.5247 26.7125 26.3817 24.3029C27.0788 22.3708 26.3475 21.2492 24.9076 20.5163C25.9703 20.2832 26.7589 19.6058 26.9645 18.2289ZM23.2963 23.2258C22.8431 25.0076 19.9505 24.2585 18.6517 23.9222C18.5422 23.8938 18.444 23.8684 18.3596 23.8476L19.2395 20.4164C19.3514 20.4439 19.489 20.4741 19.6451 20.5083L19.6451 20.5083C21.0034 20.8065 23.7678 21.4132 23.2963 23.2258ZM23.7991 18.1956C23.3793 19.8171 20.9932 19.1907 19.9072 18.9057L19.9071 18.9056C19.8106 18.8803 19.7245 18.8577 19.6509 18.8396L20.4508 15.7304C20.5441 15.7534 20.6589 15.7783 20.7892 15.8067L20.7893 15.8067C21.9199 16.0526 24.2192 16.5528 23.7991 18.1956ZM5.75 20C5.75 12.1299 12.1299 5.75 20 5.75C27.8701 5.75 34.25 12.1299 34.25 20C34.25 27.8701 27.8701 34.25 20 34.25C12.1299 34.25 5.75 27.8701 5.75 20ZM20 4.25C11.3015 4.25 4.25 11.3015 4.25 20C4.25 28.6985 11.3015 35.75 20 35.75C28.6985 35.75 35.75 28.6985 35.75 20C35.75 11.3015 28.6985 4.25 20 4.25Z" fill="#FB9914"/>
+                        </svg>
+                        <div>
+                            <span>FIDD</span>
+                            <span>MyCryptoPlace</span>
+                        </div>
+                    </li>
+                    <li class="coin">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20ZM19.992 10V17.2877L25.6602 20.1218L19.992 10ZM19.6682 17.6113V23.9192L14 20.4454L19.6682 17.6113ZM19.992 17.6113V23.9192L25.6602 20.4454L19.992 17.6113ZM25.6602 21.498L19.992 25.1419V30.0003L25.6602 21.498ZM19.6682 25.1419L14 21.498L19.6682 30.0003V25.1419ZM19.6682 17.2877V10L14 20.1218L19.6682 17.2877ZM5.75 20C5.75 12.1299 12.1299 5.75 20 5.75C27.8701 5.75 34.25 12.1299 34.25 20C34.25 27.8701 27.8701 34.25 20 34.25C12.1299 34.25 5.75 27.8701 5.75 20ZM20 4.25C11.3015 4.25 4.25 11.3015 4.25 20C4.25 28.6985 11.3015 35.75 20 35.75C28.6985 35.75 35.75 28.6985 35.75 20C35.75 11.3015 28.6985 4.25 20 4.25Z" fill="#547FEF"/>
+                        </svg>    
+                        <div>
+                            <span>Ethereum</span>
+                            <span>MyCryptoPlace</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="transfer-info">
+                <span class="dis-val">0</span>
+                <input type="number" pattern="[0-9]*" name="" id="pay" value="0">
+                <span class="unit">ETH</span>
+
+                <div class="coin-based">
+                    <div>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20ZM19.992 10V17.2877L25.6602 20.1218L19.992 10ZM19.6682 17.6113V23.9192L14 20.4454L19.6682 17.6113ZM19.992 17.6113V23.9192L25.6602 20.4454L19.992 17.6113ZM25.6602 21.498L19.992 25.1419V30.0003L25.6602 21.498ZM19.6682 25.1419L14 21.498L19.6682 30.0003V25.1419ZM19.6682 17.2877V10L14 20.1218L19.6682 17.2877ZM5.75 20C5.75 12.1299 12.1299 5.75 20 5.75C27.8701 5.75 34.25 12.1299 34.25 20C34.25 27.8701 27.8701 34.25 20 34.25C12.1299 34.25 5.75 27.8701 5.75 20ZM20 4.25C11.3015 4.25 4.25 11.3015 4.25 20C4.25 28.6985 11.3015 35.75 20 35.75C28.6985 35.75 35.75 28.6985 35.75 20C35.75 11.3015 28.6985 4.25 20 4.25Z" fill="#547FEF"/>
+                        </svg>    
+                        <div>
+                            <span>Ethereum</span>
+                            <span>MyCryptoPlace</span>
+                        </div>
+                    </div>
+
+                    <span>0.712 ETH</span>
+                </div>
+            </div>
+
+            <div class="num-board">
+                <a href="javascript:void(0)" class="key">1</a>
+                <a href="javascript:void(0)" class="key">2</a>
+                <a href="javascript:void(0)" class="key">3</a>
+                <a href="javascript:void(0)" class="key">4</a>
+                <a href="javascript:void(0)" class="key">5</a>
+                <a href="javascript:void(0)" class="key">6</a>
+                <a href="javascript:void(0)" class="key">7</a>
+                <a href="javascript:void(0)" class="key">8</a>
+                <a href="javascript:void(0)" class="key">9</a>
+                <a href="javascript:void(0)" class="key top">.</a>
+                <a href="javascript:void(0)" class="key">0</a>
+                <a href="javascript:void(0)" class="key remove"></a>
+            </div>
+            
+            <div class="bottom-button-container" hidden>
+                <button class="primary" id="goToTransferDetail">Continue</button>
+            </div>
+        </div>
+ 
+        <div class="step step2">
+            <svg width="65" height="62" viewBox="0 0 65 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_10202_22884)">
+                <path d="M5.19839 31.5245C5.15566 30.8206 5.56166 30.1663 6.21134 29.8921L9.56142 28.5082L11.2365 27.8163L39.7122 16.0533L46.4124 13.2855L59.8127 7.75L26.5627 38.625L6.40134 33.0224C5.72326 32.8287 5.24111 32.2284 5.19839 31.5245Z" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M59.8125 7.75L50.6687 51.1792C50.5205 51.8697 50.0408 52.4423 49.3871 52.7093C48.7334 52.9763 47.99 52.9032 47.4008 52.514L26.5625 38.625L59.8125 7.75Z" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.5625 38.625V54.015C26.5636 54.5712 26.937 55.0577 27.4739 55.2026C28.0109 55.3475 28.5783 55.1149 28.8591 54.6349L34.9415 44.2086" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <path d="M5.19839 31.5245C5.15566 30.8206 5.56166 30.1663 6.21134 29.8921L9.56142 28.5082L11.2365 27.8163L39.7122 16.0533L46.4124 13.2855L59.8127 7.75L26.5627 38.625L6.40134 33.0224C5.72326 32.8287 5.24111 32.2284 5.19839 31.5245Z" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M59.8125 7.75L50.6687 51.1792C50.5205 51.8697 50.0408 52.4423 49.3871 52.7093C48.7334 52.9763 47.99 52.9032 47.4008 52.514L26.5625 38.625L59.8125 7.75Z" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.5625 38.625V54.015C26.5636 54.5712 26.937 55.0577 27.4739 55.2026C28.0109 55.3475 28.5783 55.1149 28.8591 54.6349L34.9415 44.2086" stroke="#80EED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <filter id="filter0_f_10202_22884" x="0" y="-1" width="65" height="65" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10202_22884"/>
+                </filter>
+                </defs>
+            </svg>
+                
+            <h3>Send .0057 ETH</h3>
+
+            <ul>
+                <li>To<span>0x4nbKwkd2H9VK...</span></li>
+                <li>Total value<span>0.0057 ETH</span></li>
+                <li>From<span>MyCryptoPlace</span></li>
+                <li>Network<span>Ethereum</span></li>
+                <li>Zest fee<span>0 ETH</span></li>
+                <li>Network fee<span>0.00023 ETH</span></li>
+            </ul>
+
+            <div class="bottom-button-container">
+                <button class="primary" id="payConfirm">Confirm</button>
+            </div>
+        </div>
+
+        <div class="step step3">
+            <svg width="65" height="57" viewBox="0 0 65 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_10447_974)">
+                <path d="M49.6963 19.3333L54.2796 14.75" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M49.6963 37.6667L54.2796 42.25" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M50.8423 28.5003H59.8623" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.3216 19.3333L10.7383 14.75" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.3216 37.6667L10.7383 42.25" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.1748 28.5003H5.15479" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M32.5083 5.00018V51.9995" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2827 40.8631C22.2829 41.1171 22.3776 41.3618 22.5484 41.5497L31.7439 51.6648C31.9375 51.8779 32.2121 51.9993 32.5 51.9993C32.7879 51.9993 33.0624 51.8779 33.256 51.6648L42.4516 41.5497C42.6224 41.3618 42.7171 41.1171 42.7172 40.8631V13.3787C42.7168 13.0685 42.5754 12.7753 42.333 12.5818L33.1375 5.22537C32.7646 4.9276 32.2353 4.9276 31.8624 5.22537L22.6669 12.5818C22.4245 12.7753 22.2832 13.0685 22.2827 13.3787V40.8631Z" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M42.6173 12.9209L32.5084 15.9534L22.3994 12.9209" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.3828 41.2862L32.5081 44.3227L42.6334 41.2862" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <path d="M49.6963 19.3333L54.2796 14.75" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M49.6963 37.6667L54.2796 42.25" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M50.8423 28.5003H59.8623" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.3216 19.3333L10.7383 14.75" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.3216 37.6667L10.7383 42.25" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.1748 28.5003H5.15479" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M32.5083 5.00018V51.9995" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2827 40.8631C22.2829 41.1171 22.3776 41.3618 22.5484 41.5497L31.7439 51.6648C31.9375 51.8779 32.2121 51.9993 32.5 51.9993C32.7879 51.9993 33.0624 51.8779 33.256 51.6648L42.4516 41.5497C42.6224 41.3618 42.7171 41.1171 42.7172 40.8631V13.3787C42.7168 13.0685 42.5754 12.7753 42.333 12.5818L33.1375 5.22537C32.7646 4.9276 32.2353 4.9276 31.8624 5.22537L22.6669 12.5818C22.4245 12.7753 22.2832 13.0685 22.2827 13.3787V40.8631Z" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M42.6173 12.9209L32.5084 15.9534L22.3994 12.9209" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.3828 41.2862L32.5081 44.3227L42.6334 41.2862" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <filter id="filter0_f_10447_974" x="0.154785" y="0.000183105" width="64.7075" height="56.9994" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10447_974"/>
+                </filter>
+                </defs>
+                </svg>
+                
+            <h3>Payment sent!</h3>
+
+            <p>It’s being processed on the blockchain, which can take a few minutes. We’ll let you know when it’s complete.</p>
+
+            <div class="bottom-button-container">
+                <button class="primary" id="payDone">Done</button>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="custody swap">
+        <div class="top-bar">Swap
+            <a href="javascript:void(0)" class="go-back"></a>
+            <a href="javascript:void(0)" class="delete close-step"></a>
+        </div>
+
+        <div class="step step1 show">
+            <div class="transfer-val">
+                <div>
+                    <span class="val">0</span> <span class="unit">ETH</span>
+                </div>
+
+                <div>
+                    <span class="val">0</span> <span class="unit">USDC</span> 
+                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 22.2012C9.50326 22.2012 8.09245 21.9147 6.76758 21.3418C5.44987 20.7689 4.28613 19.9775 3.27637 18.9678C2.2666 17.958 1.47526 16.7943 0.902344 15.4766C0.329427 14.1517 0.0429688 12.7409 0.0429688 11.2441C0.0429688 9.7474 0.329427 8.34017 0.902344 7.02246C1.47526 5.69759 2.26302 4.53027 3.26562 3.52051C4.27539 2.51074 5.43913 1.7194 6.75684 1.14648C8.08171 0.573568 9.49251 0.287109 10.9893 0.287109C12.486 0.287109 13.8968 0.573568 15.2217 1.14648C16.5465 1.7194 17.7139 2.51074 18.7236 3.52051C19.7334 4.53027 20.5247 5.69759 21.0977 7.02246C21.6706 8.34017 21.957 9.7474 21.957 11.2441C21.957 12.7409 21.6706 14.1517 21.0977 15.4766C20.5247 16.7943 19.7334 17.958 18.7236 18.9678C17.7139 19.9775 16.5465 20.7689 15.2217 21.3418C13.904 21.9147 12.4967 22.2012 11 22.2012ZM11 20.375C12.2676 20.375 13.4528 20.1387 14.5557 19.666C15.6657 19.1934 16.6361 18.5417 17.4668 17.7109C18.3047 16.873 18.9564 15.9027 19.4219 14.7998C19.8945 13.6969 20.1309 12.5117 20.1309 11.2441C20.1309 9.97656 19.8945 8.79134 19.4219 7.68848C18.9492 6.58561 18.2939 5.61523 17.4561 4.77734C16.6182 3.93945 15.6478 3.28776 14.5449 2.82227C13.4421 2.34961 12.2568 2.11328 10.9893 2.11328C9.72168 2.11328 8.53646 2.34961 7.43359 2.82227C6.33073 3.28776 5.36393 3.93945 4.5332 4.77734C3.70247 5.61523 3.05078 6.58561 2.57812 7.68848C2.11263 8.79134 1.87988 9.97656 1.87988 11.2441C1.87988 12.5117 2.11263 13.6969 2.57812 14.7998C3.05078 15.9027 3.70247 16.873 4.5332 17.7109C5.37109 18.5417 6.34147 19.1934 7.44434 19.666C8.5472 20.1387 9.73242 20.375 11 20.375ZM7.1543 6.22754C7.31185 6.06999 7.4873 5.99837 7.68066 6.0127C7.87402 6.02702 8.03516 6.09863 8.16406 6.22754L10.8066 8.93457C10.9499 9.07064 11.0215 9.23535 11.0215 9.42871C11.0215 9.63639 10.957 9.80469 10.8281 9.93359C10.6992 10.0625 10.5381 10.127 10.3447 10.127C10.1514 10.127 9.98665 10.0589 9.85059 9.92285L8.74414 8.7627L8.33594 8.32227L8.35742 8.83789V15.8096C8.35742 16.0029 8.28939 16.1641 8.15332 16.293C8.02441 16.4219 7.8597 16.4863 7.65918 16.4863C7.45866 16.4863 7.29036 16.4219 7.1543 16.293C7.02539 16.1641 6.96094 16.0029 6.96094 15.8096V8.84863L6.98242 8.32227L6.57422 8.7627L5.46777 9.91211C5.32454 10.0553 5.15983 10.127 4.97363 10.127C4.78027 10.127 4.61556 10.0625 4.47949 9.93359C4.35059 9.79753 4.28613 9.62923 4.28613 9.42871C4.28613 9.264 4.35775 9.09928 4.50098 8.93457L7.1543 6.22754ZM14.835 16.2822C14.6846 16.4326 14.5055 16.5042 14.2979 16.4971C14.0902 16.4827 13.9219 16.4111 13.793 16.2822L11.1504 13.5859C11.0143 13.4284 10.9463 13.2601 10.9463 13.0811C10.9463 12.8734 11.0072 12.7087 11.1289 12.5869C11.2578 12.458 11.4261 12.3936 11.6338 12.3936C11.82 12.3936 11.9811 12.4616 12.1172 12.5977L13.2236 13.7363L13.6426 14.1875L13.6104 13.6826V6.7002C13.6104 6.50684 13.6784 6.3457 13.8145 6.2168C13.9505 6.08073 14.1188 6.0127 14.3193 6.0127C14.5127 6.0127 14.6774 6.07715 14.8135 6.20605C14.9495 6.33496 15.0176 6.49967 15.0176 6.7002V13.6719L14.9961 14.1768L15.4043 13.7363L16.5107 12.5977C16.6325 12.4616 16.7936 12.3936 16.9941 12.3936C17.2018 12.3936 17.3701 12.458 17.499 12.5869C17.6279 12.7158 17.6924 12.8805 17.6924 13.0811C17.6924 13.2673 17.6172 13.4355 17.4668 13.5859L14.835 16.2822Z" fill="white"/>
+                    </svg>    
+                </div>
+            </div>
+
+            <div class="swap-container">
+                <div class="from empty"></div>
+                <svg width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.5582 21.05C15.1782 21.05 13.7982 19.64 13.7982 18.35C13.7982 16.94 15.9882 15.02 17.2782 13.85H4.88816C2.60816 13.85 1.85816 13.52 1.31816 12.68C1.04816 12.29 0.898164 11.72 0.898164 11C0.898164 9.56 1.46816 8.81 2.42816 8.42C2.90816 8.24 3.74816 8.15 4.88816 8.15H17.2782L15.8082 6.74C14.9982 5.96 14.4582 5.36 14.1882 4.91C13.9182 4.46 13.7982 4.04 13.7982 3.65C13.7982 2.39 15.1482 0.949998 16.5582 0.949998C17.3682 0.949998 18.2382 1.4 19.4682 2.6L28.1082 11L19.6482 19.22C18.2082 20.6 17.3982 21.05 16.5582 21.05Z" fill="#999999"/>
+                </svg>
+                <div class="to empty"></div>
+            </div>
+
+            <div class="num-board">
+                <a href="javascript:void(0)" class="key">1</a>
+                <a href="javascript:void(0)" class="key">2</a>
+                <a href="javascript:void(0)" class="key">3</a>
+                <a href="javascript:void(0)" class="key">4</a>
+                <a href="javascript:void(0)" class="key">5</a>
+                <a href="javascript:void(0)" class="key">6</a>
+                <a href="javascript:void(0)" class="key">7</a>
+                <a href="javascript:void(0)" class="key">8</a>
+                <a href="javascript:void(0)" class="key">9</a>
+                <a href="javascript:void(0)" class="key top">.</a>
+                <a href="javascript:void(0)" class="key">0</a>
+                <a href="javascript:void(0)" class="key remove"></a>
+            </div>
+
+            <div class="bottom-button-container">
+                <div class="poweredBy">Powered by Uniswap 
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.01215 3.80861C5.29819 3.55315 5.59409 3.30849 5.8992 3.07528C8.11987 5.82743 10.0296 8.20549 10.1838 8.41383C10.3977 8.70279 10.3121 8.9773 9.95561 9.17957C9.75597 9.29515 9.34242 9.41073 9.14278 9.41073C8.91461 9.41073 8.64367 9.29515 8.45829 9.10733C8.32994 8.9773 7.77379 8.15377 6.51889 6.17441C5.89492 5.18367 5.33176 4.30385 5.01215 3.80861ZM6.41907 6.50671C5.61905 5.05836 5.18692 4.27603 4.95905 3.85626C1.91408 6.60165 0 10.5773 0 15C0 23.2843 6.71573 30 15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C11.7352 0 8.7141 1.043 6.25159 2.81398C8.49926 5.31819 10.6841 7.76111 10.9966 8.12487L11.182 8.32714L11.1677 8.65944C11.1535 9.10733 11.0109 9.41073 10.6829 9.71414C10.3121 10.0753 9.84153 10.2632 9.11426 10.3643C8.67219 10.4221 8.51533 10.4943 8.32994 10.6966C8.15882 10.8844 8.08752 11.13 8.04474 11.7368C7.97344 12.6904 7.85935 13.0805 7.41729 14.0196C6.98948 14.9298 6.90392 15.2621 6.97522 15.7534C7.06078 16.3313 7.38877 16.7647 8.15882 17.2993C8.74349 17.7038 9.01443 17.9639 9.15704 18.2817C9.2426 18.484 9.25686 18.5562 9.25686 18.8885C9.25686 19.4087 9.1713 19.6109 8.82905 19.9866C8.2729 20.5934 7.26042 21.0846 6.03404 21.3736C5.52067 21.4892 5.49215 21.4892 5.49215 21.3736C5.49215 21.2291 5.29251 20.839 4.96452 20.3189C4.5795 19.7265 4.42264 19.4231 4.28003 18.9608C4.12317 18.4407 4.06613 18.0939 4.09465 17.5449C4.12317 17.0248 4.18021 16.7936 4.37985 16.3891C4.53672 16.0568 4.63654 15.9123 5.27825 15.1032C6.37629 13.7306 6.76132 12.9216 6.90392 11.7802C7.03226 10.7544 7.20338 10.2632 7.58841 9.82972C7.81657 9.56966 7.87362 9.46852 7.87362 9.2807C7.87362 9.19401 7.51711 8.48607 6.41907 6.50671ZM5.86292 18.1662C6.01978 17.8916 5.93422 17.5449 5.67754 17.3715C5.43511 17.2126 5.06435 17.2848 5.06435 17.5015C5.06435 17.5593 5.09287 17.6171 5.17843 17.646C5.30677 17.7183 5.32103 17.7905 5.22121 17.9494C5.12139 18.1084 5.12139 18.2528 5.24973 18.354C5.44937 18.5129 5.72032 18.4262 5.86292 18.1662ZM10.2406 3.29928C10.098 3.31373 10.1123 3.32817 10.4118 3.37152C11.5098 3.54489 12.3512 3.97833 13.1925 4.80186C13.5775 5.1775 13.9626 5.62539 14.5758 6.44892C15.959 8.31269 16.5579 8.81837 17.7273 9.20846C18.4118 9.43963 19.1105 9.54076 20.3369 9.613C21.6916 9.68524 22.205 9.78638 22.6898 10.1187C22.9608 10.3065 23.1604 10.5232 23.3743 10.8555L23.5027 11.0433L23.4742 10.8266C23.3886 10.0175 22.8182 8.87616 22.0909 8.05263L21.9626 7.90815L21.8913 8.21156C21.7201 8.9773 21.3636 9.52631 21.0214 9.52631C20.8645 9.52631 20.6934 9.42518 20.6364 9.2807C20.5651 9.09288 20.5651 9.03509 20.6791 8.81837C20.893 8.42828 20.9358 7.9226 20.836 7.24355C20.8075 7.05573 20.7647 6.8679 20.7362 6.83901C20.6649 6.75232 20.0802 6.40557 19.7094 6.2322C18.3547 5.59649 16.7291 5.39422 15.1462 5.65428L14.7754 5.71207L14.5187 5.40867C13.5348 4.29618 12.6078 3.66047 11.5811 3.41486C11.139 3.31373 10.5116 3.25593 10.2406 3.29928ZM21.0357 5.2064C21.0642 4.65738 21.1355 4.29618 21.2923 3.96388C21.3494 3.83385 21.4064 3.71827 21.4207 3.71827C21.4349 3.71827 21.4064 3.8194 21.3636 3.93498C21.2496 4.25284 21.2353 4.70072 21.3066 5.2064C21.4064 5.85655 21.4492 5.94324 22.1337 6.65119C22.4474 6.98349 22.8182 7.40248 22.9608 7.57585L23.2032 7.8937L22.9608 7.66254C22.6613 7.37358 21.9768 6.82456 21.82 6.75232C21.7201 6.69453 21.7059 6.69453 21.6346 6.76677C21.5775 6.82456 21.5633 6.91125 21.5633 7.33024C21.549 7.98039 21.4635 8.38493 21.2496 8.80392C21.1355 9.02064 21.1212 8.9773 21.221 8.73168C21.2923 8.54386 21.3066 8.45717 21.3066 7.83591C21.3066 6.57895 21.164 6.27554 20.2941 5.76987C20.0802 5.63983 19.7094 5.45201 19.4955 5.35088C19.2674 5.24974 19.0963 5.16305 19.1105 5.16305C19.139 5.13416 19.9804 5.37977 20.3084 5.52425C20.8075 5.72652 20.893 5.74097 20.9501 5.72652C20.9929 5.68318 21.0214 5.5676 21.0357 5.2064ZM10.098 4.25284C10.0125 5.22085 10.3975 6.52115 10.9964 7.35913C11.467 8.00929 12.1943 8.51496 12.7362 8.57275C13.0927 8.60165 13.1925 8.48607 13.0357 8.2549C12.8075 7.93705 12.5365 7.43137 12.4652 7.21465C12.4225 7.08462 12.3226 6.68008 12.2513 6.33333C12.0089 5.14861 11.7522 4.67183 11.1818 4.32508C10.9679 4.19505 10.5258 4.02167 10.2692 3.97833L10.1266 3.94943L10.098 4.25284ZM20.3084 13.644C17.4848 12.4881 16.4866 11.4912 16.4866 9.80083C16.4866 9.55521 16.5009 9.35294 16.5009 9.35294C16.5104 9.35294 16.5579 9.39147 16.6266 9.44713L16.6267 9.4472C16.661 9.47501 16.7006 9.50708 16.7433 9.54076C17.3137 10.0031 17.9554 10.2054 19.738 10.4654C20.779 10.6244 21.3779 10.7399 21.9198 10.9278C23.6453 11.5057 24.7148 12.6904 24.9715 14.2941C25.0428 14.7564 25 15.6378 24.8859 16.1001C24.7861 16.4613 24.5009 17.1259 24.4296 17.1403C24.4153 17.1403 24.3868 17.0681 24.3868 16.9525C24.3583 16.3457 24.0588 15.7678 23.5597 15.3199C22.9608 14.7998 22.1907 14.4097 20.3084 13.644ZM18.1693 13.5139C18.2121 13.6295 18.2834 13.904 18.3119 14.1207C18.5401 15.4788 17.8414 16.5913 16.4296 17.0392C16.287 17.097 15.7166 17.2126 15.1604 17.2993C14.0339 17.5015 13.5205 17.6316 13.0214 17.8772C12.6649 18.0506 12.2228 18.3106 12.2513 18.3395C12.2656 18.354 12.3512 18.3251 12.4367 18.2962C13.0784 18.065 13.7914 17.9494 14.861 17.8916C15.2191 17.8675 15.6172 17.8331 15.8378 17.8141L15.9447 17.805C16.9002 17.6749 17.5704 17.386 18.0838 16.8514C18.369 16.548 18.5401 16.2735 18.6827 15.8834C18.7683 15.6378 18.7825 15.5366 18.7825 15.1032C18.7825 14.6553 18.7825 14.5686 18.6827 14.2941C18.5544 13.9329 18.4118 13.6729 18.2264 13.4561L18.098 13.2972L18.1693 13.5139ZM19.6096 16.4469C19.2389 15.6233 19.1533 14.8431 19.3529 14.1063C19.3815 14.0341 19.41 13.9618 19.4385 13.9618C19.467 13.9618 19.5526 14.0052 19.6381 14.063C19.8093 14.1785 20.1658 14.3808 21.0784 14.8865C22.2335 15.5222 22.8895 16.0134 23.3458 16.5769C23.7451 17.0681 23.9875 17.6316 24.1016 18.3251C24.1729 18.7152 24.1301 19.6543 24.0303 20.0444C23.7166 21.2724 23.0036 22.2549 21.9626 22.8184C21.8057 22.9051 21.6774 22.9628 21.6631 22.9628C21.6488 22.9628 21.7059 22.8184 21.7914 22.645C22.1337 21.9082 22.1765 21.2002 21.9198 20.4056C21.7629 19.9143 21.4349 19.322 20.779 18.3251C19.9946 17.1692 19.8093 16.8658 19.6096 16.4469ZM12.5365 19.1342C11.3387 19.3364 10.041 19.9721 8.98574 20.8679L8.68627 21.1569L8.95722 21.2002C10.3832 21.4169 10.7683 21.6192 11.7665 22.6594C12.3369 23.2518 12.5365 23.3818 13.0071 23.5119C13.7059 23.6997 14.3904 23.3674 14.6328 22.7317C14.7326 22.4427 14.7184 21.9804 14.6043 21.7492C14.3191 21.1858 13.4777 21.0124 13.0784 21.4169C12.7504 21.7492 12.8503 22.2694 13.2638 22.356C13.3024 22.3626 13.3236 22.3661 13.3248 22.3628C13.3262 22.3587 13.2979 22.3444 13.2353 22.3127C13.0499 22.226 12.9643 22.1104 12.9643 21.9226C12.9501 21.4747 13.4492 21.2435 13.9055 21.4458C14.2478 21.6047 14.3761 21.807 14.3761 22.1538C14.3761 22.6883 13.9198 23.1073 13.3922 23.0351C13.107 22.9917 12.7647 22.8184 12.5793 22.6017C12.123 22.0815 12.2941 21.2291 12.9501 20.9112C13.4492 20.6656 14.1052 20.7379 14.6185 21.0702C15.2032 21.4603 15.4599 21.807 15.959 22.9773C16.1301 23.3674 16.3298 23.7864 16.4296 23.9309C16.9002 24.6532 17.4848 25.0144 18.1693 25.0144C18.5544 25.0144 18.8396 24.9567 19.1961 24.7688C19.4528 24.6388 19.8378 24.3787 19.8093 24.3498C19.8093 24.3385 19.7384 24.363 19.6456 24.3951C19.6206 24.4037 19.594 24.4129 19.5668 24.4221C18.8111 24.711 18.041 24.6966 17.5989 24.3643C17.3137 24.1476 17.0856 23.743 16.9715 23.2229L16.9575 23.1406C16.9305 22.982 16.875 22.657 16.8289 22.3416C16.672 21.3447 16.5152 20.8968 16.1729 20.3767C15.8164 19.8421 15.1319 19.4087 14.3761 19.2064C13.9055 19.0764 13.0499 19.0475 12.5365 19.1342ZM10.8681 11.419C10.9679 11.0433 11.2959 10.6677 11.6381 10.5666C11.8663 10.4943 12.3084 10.5377 12.5223 10.6532C12.9358 10.87 13.2353 11.3467 13.164 11.6935C13.0927 12.1125 12.4225 12.4592 11.6381 12.4592C11.2389 12.4592 11.0963 12.4014 10.9394 12.1992C10.8396 12.0691 10.8111 11.6502 10.8681 11.419ZM12.4082 10.7977C12.6221 10.9278 12.6649 11.1156 12.5508 11.289C12.4652 11.4045 12.2086 11.5201 12.0232 11.5201C11.738 11.5201 11.4385 11.3179 11.4385 11.13C11.4385 10.7544 12.0232 10.5521 12.4082 10.7977Z" fill="#FF007A"/>
+                    </svg>
+                </div>
+                <button class="primary" id="swapReview">Review</button>
+            </div>
+
+            <div class="screen"></div>
+            <div class="swap-list">
+                <div class="swap-coin">
+                    <img src="./images/coin_1.svg" alt="">
+                    <div>
+                        <h4>USDC</h4>
+                        <span>40 USDC</span>
+                    </div>
+                </div>
+    
+                <div class="swap-coin">
+                    <img src="./images/coin_2.svg" alt="">
+                        
+                    <div>
+                        <h4>Ethereum</h4>
+                        <span>1.24 ETH</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="step step2">
+            <div class="swap-container hasVal">
+                <div class="from">
+                    <img src="./images/coin_2.svg" alt="">
+                    <h4>Ethereum</h4>
+                    <span class="val">1</span>
+                </div>
+                <svg width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.5582 21.05C15.1782 21.05 13.7982 19.64 13.7982 18.35C13.7982 16.94 15.9882 15.02 17.2782 13.85H4.88816C2.60816 13.85 1.85816 13.52 1.31816 12.68C1.04816 12.29 0.898164 11.72 0.898164 11C0.898164 9.56 1.46816 8.81 2.42816 8.42C2.90816 8.24 3.74816 8.15 4.88816 8.15H17.2782L15.8082 6.74C14.9982 5.96 14.4582 5.36 14.1882 4.91C13.9182 4.46 13.7982 4.04 13.7982 3.65C13.7982 2.39 15.1482 0.949998 16.5582 0.949998C17.3682 0.949998 18.2382 1.4 19.4682 2.6L28.1082 11L19.6482 19.22C18.2082 20.6 17.3982 21.05 16.5582 21.05Z" fill="#999999"/>
+                </svg>
+                <div class="to">
+                    <img src="./images/coin_1.svg" alt="">
+                    <h4>USDC</h4>
+                    <span class="val">X</span>
+                </div>
+            </div>
+
+            <div class="bottom-button-container continue">
+                <p>By confirming this transaction you are agreeing to a swap placed on the Ethereum network via Uniswap.</p>
+
+                <button class="primary" id="swapConfirm">Confirm</button>
+            </div>
+        </div>
+
+        <div class="step step3">
+            <svg width="65" height="57" viewBox="0 0 65 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_10447_974)">
+                <path d="M49.6963 19.3333L54.2796 14.75" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M49.6963 37.6667L54.2796 42.25" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M50.8423 28.5003H59.8623" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.3216 19.3333L10.7383 14.75" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.3216 37.6667L10.7383 42.25" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.1748 28.5003H5.15479" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M32.5083 5.00018V51.9995" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2827 40.8631C22.2829 41.1171 22.3776 41.3618 22.5484 41.5497L31.7439 51.6648C31.9375 51.8779 32.2121 51.9993 32.5 51.9993C32.7879 51.9993 33.0624 51.8779 33.256 51.6648L42.4516 41.5497C42.6224 41.3618 42.7171 41.1171 42.7172 40.8631V13.3787C42.7168 13.0685 42.5754 12.7753 42.333 12.5818L33.1375 5.22537C32.7646 4.9276 32.2353 4.9276 31.8624 5.22537L22.6669 12.5818C22.4245 12.7753 22.2832 13.0685 22.2827 13.3787V40.8631Z" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M42.6173 12.9209L32.5084 15.9534L22.3994 12.9209" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.3828 41.2862L32.5081 44.3227L42.6334 41.2862" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <path d="M49.6963 19.3333L54.2796 14.75" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M49.6963 37.6667L54.2796 42.25" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M50.8423 28.5003H59.8623" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.3216 19.3333L10.7383 14.75" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.3216 37.6667L10.7383 42.25" stroke="#CEF2A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.1748 28.5003H5.15479" stroke="#FBF2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M32.5083 5.00018V51.9995" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2827 40.8631C22.2829 41.1171 22.3776 41.3618 22.5484 41.5497L31.7439 51.6648C31.9375 51.8779 32.2121 51.9993 32.5 51.9993C32.7879 51.9993 33.0624 51.8779 33.256 51.6648L42.4516 41.5497C42.6224 41.3618 42.7171 41.1171 42.7172 40.8631V13.3787C42.7168 13.0685 42.5754 12.7753 42.333 12.5818L33.1375 5.22537C32.7646 4.9276 32.2353 4.9276 31.8624 5.22537L22.6669 12.5818C22.4245 12.7753 22.2832 13.0685 22.2827 13.3787V40.8631Z" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M42.6173 12.9209L32.5084 15.9534L22.3994 12.9209" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.3828 41.2862L32.5081 44.3227L42.6334 41.2862" stroke="#79F0AD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <filter id="filter0_f_10447_974" x="0.154785" y="0.000183105" width="64.7075" height="56.9994" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_10447_974"/>
+                </filter>
+                </defs>
+                </svg>
+                
+            <h3>Swap submitted!</h3>
+
+            <p>It’s being processed on the blockchain, which can take a few minutes. We’ll let you know when it’s complete.</p>
+            <div class="bottom-button-container continue">                
+                <button class="primary" id="swapDone">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
