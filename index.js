@@ -49,10 +49,11 @@ document.querySelector('#clearPre').addEventListener('click', (e)=>{
 
 
 //--------------------------------Home------------------------------------
-document.querySelector('.menu-trigger').addEventListener('click', (e)=>{
-    e.target.classList.toggle('expand');
+document.querySelectorAll('.menu-trigger').forEach(item=>{
+    item.addEventListener('click', (e)=>{
+        e.target.closest('.custody.home').classList.toggle('menu-expand');    
+    });
 });
-
 
 document.querySelector('.add.button').addEventListener('click', (e)=>{
     e.target.classList.toggle('show-options');
@@ -67,6 +68,38 @@ document.querySelector('#goSwap').addEventListener('click', (e)=>{
     document.querySelector('.custody.swap').classList.add('show');
     document.querySelector('.add.button').click();
 });
+
+
+document.querySelectorAll('.menu-items>li').forEach((item,index)=>{
+    item.addEventListener('click', (e)=>{
+        if (index === 2){
+            document.querySelector('.security-backup').classList.add('show');
+        }
+    });
+});
+
+document.querySelector('#manage_backup').addEventListener('click', (e)=>{
+    document.querySelector('.custody.security-backup').setAttribute('data-step', '2');
+});
+
+document.querySelector('.delete.close-security-bk-step').addEventListener('click', (e)=>{
+    let step = e.target.closest('.security-backup').getAttribute('data-step');
+    step--;
+    if (step>0){
+        e.target.closest('.security-backup').setAttribute('data-step', step);
+    } else if(step===0) {
+        document.querySelector('.security-backup').classList.remove('show');
+        document.querySelector('.custody.home').classList.remove('menu-expand');    
+    }
+});
+
+document.querySelector('.go-back-security').addEventListener('click', (e)=>{
+    let step = e.target.closest('.security-backup').setAttribute('data-step', '1');
+});
+
+
+
+
 
 
 //--------------------------------Payment------------------------------------
